@@ -1,0 +1,12 @@
+.image-gallery-home img{
+	filter: grayscale(100%);
+ 	-webkit-filter: grayscale(100%);
+	border-radius: 50%;
+	transition:filter 0.2s;
+ 	-webkit-transition:-webkit-filter 0.3s;
+ 	
+	&:hover {
+		filter: grayscale(0);
+		-webkit-filter: grayscale(0);		
+	}
+ }

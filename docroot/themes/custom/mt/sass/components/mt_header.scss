@@ -1,0 +1,25 @@
+@media screen and (min-width: 769px) {
+	.is-front-page{	
+		header#header{
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    z-index: 999!important;
+		    transition: all .3s ease;
+		    &.header-scrolled {
+					min-height: 75px;
+					background: #fafbfa;
+					.logo img {
+						width: 50%
+					}
+			}
+		}		
+	}	 
+}
+.navbar-header .navbar-toggle{
+	background: #8f7f28;
+	.icon-bar{
+		background: #fafbfa;
+	}
+}

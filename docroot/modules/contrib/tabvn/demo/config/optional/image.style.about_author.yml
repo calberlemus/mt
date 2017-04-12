@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: about_author
+label: about_author
+effects:
+  650fe4e9-665a-4b4d-bc00-c5045b18e163:
+    uuid: 650fe4e9-665a-4b4d-bc00-c5045b18e163
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120

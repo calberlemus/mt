@@ -1,0 +1,22 @@
+name: Demo
+type: module
+description: 'Providing features for the themes.'
+core: 8.x
+package: Tabvn
+dependencies:
+    - user
+    - link
+    - image
+    - node
+    - field_group
+    - views
+    - portfolio
+    - builder
+    - token
+    - pathauto
+    - ctools
+    - owl
+    - tweets
+    - search
+    - taxonomy
+    - path

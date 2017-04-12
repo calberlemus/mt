@@ -1,0 +1,116 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_behance
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_dribbble
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_youtube
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - field_group
+    - image
+    - link
+    - path
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_social_links:
+      children:
+        - field_facebook
+        - field_twitter
+        - field_youtube
+        - field_linkedin
+        - field_behance
+        - field_dribbble
+      parent_name: ''
+      weight: 4
+      label: 'Social links'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_behance:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_bio:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_dribbble:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_facebook:
+    weight: 6
+    settings:
+      placeholder_url: 'Facebook URL'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_linkedin:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_twitter:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: 'Twiter URL'
+    third_party_settings: {  }
+    type: link_default
+  field_youtube:
+    weight: 8
+    settings:
+      placeholder_url: 'YouTube URL'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  path:
+    type: path
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 1
+hidden:
+  contact: true
+  language: true
+  timezone: true

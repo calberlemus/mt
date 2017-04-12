@@ -1,0 +1,75 @@
+<?php
+
+use Symfony\Component\Yaml\Yaml;
+
+/**
+ * Implements of hook_modules_installed()
+ */
+function demo_modules_installed($modules) {
+  if (in_array('demo', $modules)) {
+    demo_config_entity_form_display();
+    demo_override_system_config();
+  }
+}
+
+
+function demo_override_system_config() {
+
+
+  $config = \Drupal::configFactory()->getEditable('system.theme');
+  $config->set('admin', 'seven');
+  $config->set('default', 'aklas');
+  $config->save();
+
+
+}
+
+function demo_config_entity_form_display() {
+
+  $config_names = array(
+    'core.entity_view_display.node.article.teaser',
+    'core.entity_view_display.node.article.default',
+    'core.entity_form_display.node.article.default',
+    'core.entity_form_display.node.page.default',
+    'core.entity_view_display.node.page.default',
+    'core.entity_form_display.user.user.default',
+    'core.entity_view_display.user.user.default',
+    'core.entity_view_display.user.user.compact',
+    'core.entity_form_display.block_content.basic.default',
+    'core.entity_view_display.block_content.basic.default',
+  );
+
+  foreach ($config_names as $name) {
+    if ($yml = demo_yml_check($name)) {
+      $file_content = file_get_contents($yml);
+      if ($file_content) {
+        $config = Yaml::parse($file_content);
+        $default_config = \Drupal::configFactory()->getEditable($name);
+        if ($default_config && $config) {
+          $content = $default_config->get('content');
+
+          if (!empty($config['content'])) {
+            foreach ($config['content'] as $field => $setting) {
+              $content[$field] = $setting;
+            }
+            $default_config->set('content', $content)->save();
+          }
+        }
+
+      }
+
+    }
+  }
+
+}
+
+function demo_yml_check($file) {
+  $path = drupal_get_path('module', 'demo') . '/config/optional/';
+  $path = DRUPAL_ROOT . '/' . $path;
+
+  if (file_exists($path . $file . '.yml')) {
+    return $path . $file . '.yml';
+  }
+
+  return FALSE;
+}

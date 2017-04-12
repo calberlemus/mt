@@ -1,0 +1,5 @@
+name: MT Component Builder
+type: module
+description: MT Component Builder
+core: 8.x
+package: Mt

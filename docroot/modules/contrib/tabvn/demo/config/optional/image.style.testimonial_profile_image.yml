@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: testimonial_profile_image
+label: 'Testimonial profile image'
+effects:
+  7690b62e-c479-4906-8d60-965ecf5fd003:
+    uuid: 7690b62e-c479-4906-8d60-965ecf5fd003
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 60

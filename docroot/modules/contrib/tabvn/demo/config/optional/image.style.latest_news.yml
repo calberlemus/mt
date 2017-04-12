@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: latest_news
+label: 'Latest news'
+effects:
+  b55da15c-3cae-4c0a-a500-e0150c371cae:
+    uuid: b55da15c-3cae-4c0a-a500-e0150c371cae
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 460
+      height: 180

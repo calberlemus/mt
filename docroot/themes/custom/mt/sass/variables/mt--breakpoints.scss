@@ -1,0 +1,15 @@
+$from-xs-mobile: (min-width 375px);
+$from-sm-mobile: (min-width 640px);
+$from-mobile: (min-width 769px);
+$from-tablets: (min-width 992px);
+$from-desktop: (min-width 1024px);
+$from-normal: (min-width 1200px);
+$from-fullhd: (min-width 1440px);
+
+$xs-mobile: (max-width 375px);
+$sm-mobile: (max-width 640px);
+$mobile: (max-width 768px);
+$desktop: (max-width 1024px);
+$tablets: (max-width 992px);
+$normal: (max-width 1200px);
+$fullhd: (max-width 1440px);

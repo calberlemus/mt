@@ -1,0 +1,175 @@
+form {
+	position: relative;
+	z-index: 10;
+
+	> p {
+		font-size: 14px;
+		font-style: italic;
+	}
+
+	label {
+		font-size: 16px;
+		font-weight: normal;
+		max-width: 50%;
+		overflow: hidden;
+		@include nowrap;
+
+		&.form-required::after {
+			position: relative;
+			top: -5px;margin-left: 5px;
+		}
+	}
+		
+	textarea {
+		border-radius: 0;
+	}
+
+	/* Colores librería MUI - Material Design */
+	.form-item {
+		.form-control,
+		&.mui-select {
+			&:focus,
+			&:hover {
+				border-color: #444;
+
+				> select {
+					border-color: #444;
+
+					+ label,
+					> label {color: #444;}
+				}
+
+				+ label,
+				> label {color: #444;}
+			}
+		}
+	}
+
+	/* Campos generales */
+	.form-item {
+		.form-control {
+			width: 100%;
+			box-shadow: none!important;
+
+			&:focus,
+			&:hover {
+				outline: none!important;
+			}
+		}
+
+		.input-group-addon {
+			display: none;
+		}
+	}
+
+	/* Tipos de campos - DATE */
+	.form-type-date {
+		width: 100%;
+
+		input[type="date"] {
+			border: 0;
+			padding-left: 0;
+			border-radius: 0;
+			border-bottom: 1px solid;
+		}
+	}
+
+	/* Tipos de campos - DATE */
+	.form-type-date {
+		width: 100%;
+
+		input[type="date"] {
+			background: transparent;
+			border: 0;
+			border-radius: 0;
+			border-bottom: 1px solid;
+		}
+	}
+
+	/* Tipos de campos - CHECKS & RADIO */
+	.mui-checkbox,
+	.mui-radio {
+		input[type="radio"],
+		input[type="checkbox"] {
+			display: none;
+
+			+ label {
+				padding-left: 0;
+				position: relative;
+
+				&:before {
+					content: '';
+					display: block;
+					float: left;
+					width: 0;
+					height: 0;
+					border: 2px solid lightgray;
+					padding: 8px;
+					margin: 4px 10px 0 0;
+					@include transition(all .3s ease);
+				}
+			}
+		}
+
+		input[type="radio"] {
+			+ label:before {
+				border-radius: 100%;
+				padding: 7px;
+			}
+
+			+ label:after {
+				@include transition(all .3s ease);
+				content: '';
+				background: lightgray;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 13px 10px;
+				height: 0;
+				width: 0;
+				border-radius: 100%;
+			}
+
+			&:checked + label:after {
+				height: 10px;
+				width: 10px;
+				margin: 8px 0 0 4px;
+			}
+		}
+
+		input[type="checkbox"] {
+			&:checked + label:before {
+				margin-right: 15px;
+				margin-left: 7px;
+				padding: 6px 3px;
+				border-top: 0;
+				border-left: 0;
+				@include transform(rotate(35deg));
+			}
+		}
+	}
+
+	/* Agrupación de campos - Panel / Fieldgroup */
+	.panel.panel-default {
+		border: 0;
+		background: transparent;
+		border-radius: 0;
+		box-shadow: none;
+		margin-top: 30px;
+
+		.panel-heading {
+			background: transparent;
+			padding: 0;
+			border: 0;
+
+			a {
+				border: 0;
+			}
+		}
+
+		.panel-body {
+			border: 0;
+			padding: 10px 0 0;
+		}
+	}
+}

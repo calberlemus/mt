@@ -1,0 +1,64 @@
+matchHeight:
+  remote: https://github.com/liabru/jquery-match-height
+  version: 0.70
+  license:
+    name: MIT
+    url: https://github.com/liabru/jquery-match-height/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/jquery.matchHeight/jquery.matchHeight.js: {}
+  dependencies:
+    - core/jquery
+    
+mui:
+  remote: https://github.com/muicss/mui
+  license:
+    name: MIT
+    url: https://github.com/muicss/mui/blob/master/LICENSE.txt
+    gpl-compatible: true
+  js:
+    /libraries/mui/packages/cdn/js/mui.min.js: {}
+  css:
+    component:
+      /libraries/mui/packages/cdn/css/mui.min.css: {}
+  dependencies:
+    - core/jquery 
+lightbox2:
+  remote: https://github.com/lokesh/lightbox2
+  license:
+    name: MIT
+    url: https://github.com/lokesh/lightbox2/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/lightbox2/src/js/lightbox.js: {}
+  css:
+    component:
+      /libraries/lightbox2/src/css/lightbox.css: {}
+  dependencies:
+    - core/jquery
+         
+
+drupal.dialog.ajax:
+  js:
+    js/dialog.ajax.js: {}
+  dependencies:
+    - core/drupal.ajax
+    - bootstrap/drupal.dialog
+
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+global-js:
+  js:
+    js/scripts.js: {}
+  dependencies:
+     - core/jquery
+     - core/drupal
+     - core/drupalSettings
+     - core/jquery.once
+     - core/jquery.ui.effects.core
+     - views/views.ajax
+     - owl/owl
+     - mt/matchHeight     
+     - mt/lightbox2

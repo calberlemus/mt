@@ -1,0 +1,110 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_behance
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_dribbble
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_youtube
+    - field.field.user.user.user_picture
+    - image.style.about_author
+  module:
+    - image
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_behance:
+    weight: 12
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+  field_bio:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_dribbble:
+    weight: 13
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+  field_facebook:
+    weight: 8
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+  field_linkedin:
+    weight: 11
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+  field_twitter:
+    weight: 9
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+  field_youtube:
+    weight: 10
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+  member_for:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: about_author
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden: {  }

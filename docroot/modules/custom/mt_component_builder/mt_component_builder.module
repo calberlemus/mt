@@ -1,0 +1,1382 @@
+<?php
+
+use Drupal\block;
+use Drupal\builder\BuilderBase;
+use Drupal\Component\Utility\Html;
+use Drupal\core\Database\Database;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+use Drupal\image;
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\file\Entity\File;
+
+
+/**
+ * @file
+ * Contains mt_component_builder.module..
+ */
+
+function mt_component_builder_theme($existing, $type, $theme, $path) {
+	return [
+			'builder_header_block_title' => [
+					'variables' => [
+							'title' => NULL,
+							'subtitle' => NULL,							
+					],
+			],
+			'builder_block_title' => [
+					'variables' => [
+							'title' => NULL,
+							'subtitle' => NULL,
+							'items' => NULL,
+					],
+			],			
+			'builder_basic_info' => [
+					'variables' => [
+							'title' => NULL,
+							'subtitle' => NULL,
+							'title_info' => NULL,
+							'content_info' => NULL,
+							'link' => NULL,
+					],
+			],
+	];
+}
+
+/**
+ * Implements of hook_builder_element_info()
+ */
+function mt_component_builder_builder_element_info(){	
+	$elements['image_gallery'] = array(
+			'#type' => 'image_gallery',
+			'#info' => t('Image Gallery')->render(),
+			'#depend' => 'column'
+	);
+	$elements['slider_multimedia'] = array(
+			'#type' => 'slider_multimedia',
+			'#info' => t('Slider Multimedia')->render(),
+			'#depend' => 'column',
+	);
+        
+	$elements['image_slider'] = array(
+			'#type' => 'image_slider',
+			'#info' => t('Image Slider')->render(),
+			'#depend' => 'slider_multimedia'
+	);
+	$elements['video_slider'] = array(
+			'#type' => 'video_slider',
+			'#info' => t('Video Slider')->render(),
+			'#depend' => 'slider_multimedia'
+	);
+    $elements['block_title'] = array(
+        '#type' => 'block_title',
+        '#info' => t('Block Title')->render(),
+        '#depend' => 'column',        
+    );
+    $elements['header_block_title'] = array(
+    		'#type' => 'header_block_title',
+    		'#info' => t('Header Block Title')->render(),
+    		'#depend' => 'column',
+    );
+    $elements['basic_info'] = array(
+    		'#type' => 'basic_info',
+    		'#info' => t('Basic Info')->render(),
+    		'#depend' => 'column',
+    );
+    return $elements;
+}
+
+/***
+ * Implements of hook_builder_element_configure($type, $element)
+ * @param $delta
+ * @param $element
+ */
+function mt_component_builder_builder_element_configure($delta, $element){
+	
+	$form = array();	
+	$values = isset($element['#settings']) ? $element['#settings'] : array();
+	$settings = isset($element['#settings']) ? $element['#settings'] : array();
+	$type = $element['#type'];	
+	switch ($type) {
+		
+		case 'image_gallery':
+				
+			$form['vertical_tabs'] = array(
+			'#type' => 'horizontal_tabs',
+			'#parents' => array('vertical_tabs'),
+				
+			);
+			$form['general'] = array(
+					'#type' => 'details',
+					'#title' => t('General')->render(),
+					'#group' => 'vertical_tabs',
+						
+			);
+				
+				
+			$form['general']['image_gallery'] = array(
+					'#type' => 'managed_file',
+					'#title' => t('Upload image'),
+					'#description' => t('Allowed extensions: gif png jpg jpeg'),
+					'#default_value' => isset($settings['general']['image_gallery']) ? $settings['general']['image_gallery'] : '',
+					'#upload_location' => 'public://',
+					'#upload_validators' => array(
+							'file_validate_extensions' => array('gif png jpg jpeg'),
+							// Pass the maximum file size in bytes
+							'file_validate_size' => array(10 * 3024 * 3024),
+					),
+					'#required' => TRUE,
+			);
+			$form['general']['title'] = array(
+					'#default_value' => isset($settings['general']['title']) ? $settings['general']['title'] : '',
+					'#title' => t('Title'),
+					'#type' => 'textfield',
+			);
+			$form['general']['image_gallery_alt'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Image alt'),
+					'#default_value' => isset($settings['general']['image_gallery_alt']) ? $settings['general']['image_gallery_alt'] : '',
+			);
+				
+			if (\Drupal::moduleHandler()->moduleExists('image')) {
+				$image_style_options = array('' => t('None'));
+				$img_styles = \Drupal::entityManager()
+				->getStorage('image_style')
+				->loadMultiple();
+				if (!empty($img_styles)) {
+					foreach ($img_styles as $k => $v) {
+						$image_style_options[$v->getName()] = $v->label();
+					}
+				}
+				$form['general']['image_gallery_style'] = array(
+						'#type' => 'select',
+						'#title' => t('Image style'),
+						'#description' => t('Use your image style for image view. Default will be original of your image.'),
+						'#default_value' => isset($settings['general']['image_gallery_style']) ? $settings['general']['image_gallery_style'] : '',
+						'#options' => $image_style_options,
+				);
+			}
+			$form['general']['image_gallery_link'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Image link'),
+					'#default_value' => isset($settings['general']['image_gallery_link']) ? $settings['general']['image_gallery_link'] : '',
+			);
+				
+			$form['general']['attributes'] = array(
+					'#type' => 'details',
+					'#open' => FALSE,
+					'#title' => t('Attributes settings')
+			);
+			$form['general']['attributes']['id'] = array(
+					'#type' => 'textfield',
+					'#title' => t('ID'),
+					'#default_value' => isset($settings['general']['attributes']['id']) ? $settings['general']['attributes']['id'] : '',
+					'#description' => t('Enter html ID for element wrapper.')
+			);
+			$form['general']['attributes']['class'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Extra class name'),
+					'#default_value' => isset($settings['general']['attributes']['class']) ? $settings['general']['attributes']['class'] : '',
+					'#description' => t('Enter your custom css class name, this will use to your custom css.')
+			);
+				
+			$form['general']['attributes']['data-animation'] = array(
+					'#type' => 'select',
+					'#options' => _builder_animate_options(),
+					'#title' => t('Animation'),
+					'#default_value' => isset($values['general']['attributes']['data-animation']) ? $values['general']['attributes']['data-animation'] : '',
+					'#description' => t('Use animation.')->render()
+			);
+				
+				
+			$form['design'] = array(
+					'#type' => 'details',
+					'#title' => t('Design'),
+					'#group' => 'vertical_tabs',
+					'#tree' => TRUE,
+						
+			);
+				
+			$form['design']['css_box'] = array(
+					'#type' => 'css_box',
+					'#options' => !empty($values['design']['css_box']) ? $values['design']['css_box'] : array(),
+					'#validated' => TRUE,
+			);
+			break;
+		case 'slider_multimedia':			
+		
+			$form['vertical_tabs'] = array(
+					'#type' => 'horizontal_tabs',
+					'#parents' => array('vertical_tabs'),
+		
+			);
+		
+			$form['general'] = array(
+					'#type' => 'details',
+					'#title' => t('General')->render(),
+					'#group' => 'vertical_tabs',
+		
+			);			
+		
+			$form['general']['attributes'] = array(
+					'#type' => 'container',
+			);
+			$form['general']['attributes']['id'] = array(
+					'#type' => 'textfield',
+					'#title' => t('ID')->render(),
+					'#default_value' => isset($values['general']['attributes']['id']) ? $values['general']['attributes']['id'] : '',
+					'#description' => t('Enter html ID for element wrapper.')
+			);
+			$form['general']['attributes']['class'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Extra class name')->render(),
+					'#default_value' => isset($values['general']['attributes']['class']) ? $values['general']['attributes']['class'] : '',
+					'#description' => t('Enter your custom css class name, this will use to your custom css.')
+			);
+			$form['general']['attributes']['data-animation'] = array(
+					'#type' => 'select',
+					'#options' => _builder_animate_options(),
+					'#title' => t('Animation'),
+					'#default_value' => isset($values['general']['attributes']['data-animation']) ? $values['general']['attributes']['data-animation'] : '',
+					'#description' => t('Use animation.')->render()
+			);
+		
+			$form['design'] = array(
+					'#type' => 'details',
+					'#title' => t('Design')->render(),
+					'#group' => 'vertical_tabs',
+					'#tree' => TRUE,	
+			);
+		
+		
+			$form['design']['css_box'] = array(
+					'#type' => 'css_box',
+					'#options' => !empty($values['design']['css_box']) ? $values['design']['css_box'] : array(),
+			);
+		
+			break;
+		case 'image_slider':			
+			
+			$form['vertical_tabs'] = array(
+					'#type' => 'horizontal_tabs',
+					'#parents' => array('vertical_tabs'),
+			
+			);
+			$form['general'] = array(
+					'#type' => 'details',
+					'#title' => t('General')->render(),
+					'#group' => 'vertical_tabs',
+			
+			);
+			
+			
+			$form['general']['image_slider'] = array(
+					'#type' => 'managed_file',
+					'#title' => t('Upload image'),
+					'#description' => t('Allowed extensions: gif png jpg jpeg'),
+					'#default_value' => isset($settings['general']['image_slider']) ? $settings['general']['image_slider'] : '',
+					'#upload_location' => 'public://',
+					'#upload_validators' => array(
+							'file_validate_extensions' => array('gif png jpg jpeg'),
+							// Pass the maximum file size in bytes
+							'file_validate_size' => array(10 * 3024 * 3024),
+					),
+					'#required' => TRUE,
+			);
+			$form['general']['title'] = array(
+					'#default_value' => isset($settings['general']['title']) ? $settings['general']['title'] : '',
+					'#title' => t('Title'),
+					'#type' => 'textfield',
+			);
+			$form['general']['image_slider_alt'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Image alt'),
+					'#default_value' => isset($settings['general']['image_slider_alt']) ? $settings['general']['image_slider_alt'] : '',
+			);
+			
+			if (\Drupal::moduleHandler()->moduleExists('image')) {
+				$image_style_options = array('' => t('None'));
+				$img_styles = \Drupal::entityManager()
+				->getStorage('image_style')
+				->loadMultiple();
+				if (!empty($img_styles)) {
+					foreach ($img_styles as $k => $v) {
+						$image_style_options[$v->getName()] = $v->label();
+					}
+				}
+				$form['general']['image_slider_style'] = array(
+						'#type' => 'select',
+						'#title' => t('Image style'),
+						'#description' => t('Use your image style for image view. Default will be original of your image.'),
+						'#default_value' => isset($settings['general']['image_slider_style']) ? $settings['general']['image_slider_style'] : '',
+						'#options' => $image_style_options,
+				);
+			}
+			$form['general']['image_slider_link'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Image link'),
+					'#default_value' => isset($settings['general']['image_slider_link']) ? $settings['general']['image_slider_link'] : '',
+			);
+			
+			$form['general']['attributes'] = array(
+					'#type' => 'details',
+					'#open' => FALSE,
+					'#title' => t('Attributes settings')
+			);
+			$form['general']['attributes']['id'] = array(
+					'#type' => 'textfield',
+					'#title' => t('ID'),
+					'#default_value' => isset($settings['general']['attributes']['id']) ? $settings['general']['attributes']['id'] : '',
+					'#description' => t('Enter html ID for element wrapper.')
+				);
+			$form['general']['attributes']['class'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Extra class name'),
+					'#default_value' => isset($settings['general']['attributes']['class']) ? $settings['general']['attributes']['class'] : '',
+					'#description' => t('Enter your custom css class name, this will use to your custom css.')
+			);
+			
+			$form['general']['attributes']['data-animation'] = array(
+					'#type' => 'select',
+					'#options' => _builder_animate_options(),
+					'#title' => t('Animation'),
+					'#default_value' => isset($values['general']['attributes']['data-animation']) ? $values['general']['attributes']['data-animation'] : '',
+					'#description' => t('Use animation.')->render()
+			);
+			
+			
+			$form['design'] = array(
+					'#type' => 'details',
+					'#title' => t('Design'),
+					'#group' => 'vertical_tabs',
+					'#tree' => TRUE,
+			
+			);
+			
+			$form['design']['css_box'] = array(
+					'#type' => 'css_box',
+					'#options' => !empty($values['design']['css_box']) ? $values['design']['css_box'] : array(),
+					'#validated' => TRUE,
+			);
+			break;
+		case 'video_slider':
+					
+				$form['vertical_tabs'] = array(
+				'#type' => 'horizontal_tabs',
+				'#parents' => array('vertical_tabs'),
+					
+				);
+				$form['general'] = array(
+						'#type' => 'details',
+						'#title' => t('General')->render(),
+						'#group' => 'vertical_tabs',
+							
+				);
+					
+					
+				$form['general']['video_slider'] = array(
+						'#type' => 'managed_file',
+						'#title' => t('Upload Video'),
+						'#description' => t('Allowed extensions: mp4 ogv webm'),
+						'#default_value' => isset($settings['general']['video_slider']) ? $settings['general']['video_slider'] : '',
+						'#upload_location' => 'public://',
+						'#upload_validators' => array(
+								'file_validate_extensions' => array('mp4 ogv webm'),
+								// Pass the maximum file size in bytes
+								'file_validate_size' => array(10 * 3024 * 3024),
+						),
+						'#required' => TRUE,
+				);
+				$form['general']['video_thumbnail_image_slider'] = array(
+						'#type' => 'managed_file',
+						'#title' => t('Upload image thumbnail'),
+						'#description' => t('Allowed extensions: gif png jpg jpeg'),
+						'#default_value' => isset($settings['general']['video_thumbnail_image_slider']) ? $settings['general']['video_thumbnail_image_slider'] : '',
+						'#upload_location' => 'public://',
+						'#upload_validators' => array(
+								'file_validate_extensions' => array('gif png jpg jpeg'),
+								// Pass the maximum file size in bytes
+								'file_validate_size' => array(10 * 3024 * 3024),
+						),
+						'#required' => TRUE,
+				);
+				$form['general']['title'] = array(
+						'#default_value' => isset($settings['general']['title']) ? $settings['general']['title'] : '',
+						'#title' => t('Title'),
+						'#type' => 'textfield',
+				);				
+					
+				
+					
+				$form['general']['attributes'] = array(
+						'#type' => 'details',
+						'#open' => FALSE,
+						'#title' => t('Attributes settings')
+				);
+				$form['general']['attributes']['id'] = array(
+						'#type' => 'textfield',
+						'#title' => t('ID'),
+						'#default_value' => isset($settings['general']['attributes']['id']) ? $settings['general']['attributes']['id'] : '',
+						'#description' => t('Enter html ID for element wrapper.')
+				);
+				$form['general']['attributes']['class'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Extra class name'),
+						'#default_value' => isset($settings['general']['attributes']['class']) ? $settings['general']['attributes']['class'] : '',
+						'#description' => t('Enter your custom css class name, this will use to your custom css.')
+				);
+					
+				$form['general']['attributes']['data-animation'] = array(
+						'#type' => 'select',
+						'#options' => _builder_animate_options(),
+						'#title' => t('Animation'),
+						'#default_value' => isset($values['general']['attributes']['data-animation']) ? $values['general']['attributes']['data-animation'] : '',
+						'#description' => t('Use animation.')->render()
+				);
+					
+					
+				$form['design'] = array(
+						'#type' => 'details',
+						'#title' => t('Design'),
+						'#group' => 'vertical_tabs',
+						'#tree' => TRUE,
+							
+				);
+					
+				$form['design']['css_box'] = array(
+						'#type' => 'css_box',
+						'#options' => !empty($values['design']['css_box']) ? $values['design']['css_box'] : array(),
+						'#validated' => TRUE,
+				);
+				break;
+		case 'block_title':
+			$form['vertical_tabs'] = array(
+					'#type' => 'horizontal_tabs',
+					'#parents' => array('vertical_tabs'),
+			
+			);
+			$form['general'] = array(
+					'#type' => 'details',
+					'#title' => t('General'),
+					'#group' => 'vertical_tabs',
+			
+			);
+			$form['general']['attributes'] = array(
+					'#type' => 'details',
+					'#open' => FALSE,
+					'#title' => t('Attributes settings'),
+			);
+			$form['general']['attributes']['id'] = array(
+					'#type' => 'textfield',
+					'#title' => t('ID'),
+					'#default_value' => isset($values['general']['attributes']['id']) ? $values['general']['attributes']['id'] : '',
+					'#description' => t('Enter html ID for element wrapper.')
+			);
+			$form['general']['attributes']['class'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Extra class name'),
+					'#default_value' => isset($values['general']['attributes']['class']) ? $values['general']['attributes']['class'] : '',
+					'#description' => t('Enter your custom css class name, this will use to your custom css.')
+			);
+			
+			$form['general']['attributes']['data-animation'] = array(
+					'#type' => 'select',
+					'#options' => _builder_animate_options(),
+					'#title' => t('Animation'),
+					'#default_value' => isset($values['general']['attributes']['data-animation']) ? $values['general']['attributes']['data-animation'] : '',
+					'#description' => t('Use animation.')->render()
+			);
+			
+			
+			$form['design'] = array(
+					'#type' => 'details',
+					'#title' => t('Design'),
+					'#group' => 'vertical_tabs',
+					'#tree' => TRUE,
+			
+			);
+			$form['general']['title'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Title'),
+					'#default_value' => isset($values['general']['title']) ? $values['general']['title'] : '',
+					'#description' => t('Enter title block.')
+			);
+			$form['general']['subtitle'] = array(
+					'#type' => 'textfield',
+					'#title' => t('Subtitle'),
+					'#default_value' => isset($values['general']['subtitle']) ? $values['general']['subtitle'] : '',
+					'#description' => t('Enter subtitle block.')
+			);
+			$form['general']['data'] = array(
+					'#type' => 'fieldset',
+					'#title' => t('Data'),
+					'data1'=> array(
+						'#type' => 'fieldset',
+						'#title' => t('Data 1'),
+						'data1_value'=> array(
+								'#type' => 'textfield',
+								'#title' => t('Value'),
+								'#default_value' => isset($values['general']['data']['data1']['data1_value']) ? $values['general']['data']['data1']['data1_value'] : '',
+						),
+						'data1_unity'=> array(
+								'#type' => 'textfield',
+								'#title' => t('Unity'),
+								'#default_value' => isset($values['general']['data']['data1']['data1_unity']) ? $values['general']['data']['data1']['data1_unity'] : '',
+						),
+						'data1_text'=> array(
+								'#type' => 'textfield',
+								'#title' => t('Text'),
+								'#default_value' => isset($values['general']['data']['data1']['data1_text']) ? $values['general']['data']['data1']['data1_text'] : '',
+						),
+					),
+					'data2'=> array(
+							'#type' => 'fieldset',
+							'#title' => t('Data 2'),
+							'data2_value'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Value'),
+									'#default_value' => isset($values['general']['data']['data2']['data2_value']) ? $values['general']['data']['data2']['data2_value'] : '',
+							),
+							'data2_unity'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Unity'),
+									'#default_value' => isset($values['general']['data']['data2']['data2_unity']) ? $values['general']['data']['data2']['data2_unity'] : '',
+							),
+							'data2_text'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Text'),
+									'#default_value' => isset($values['general']['data']['data2']['data2_text']) ? $values['general']['data']['data2']['data2_text'] : '',
+							),
+					),
+					'data3'=> array(
+							'#type' => 'fieldset',
+							'#title' => t('Data 3'),
+							'data3_value'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Value'),
+									'#default_value' => isset($values['general']['data']['data3']['data3_value']) ? $values['general']['data']['data3']['data3_value'] : '',
+							),
+							'data3_unity'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Unity'),
+									'#default_value' => isset($values['general']['data']['data3']['data3_unity']) ? $values['general']['data']['data3']['data3_unity'] : '',
+							),
+							'data3_text'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Text'),
+									'#default_value' => isset($values['general']['data']['data3']['data3_text']) ? $values['general']['data']['data3']['data3_text'] : '',
+							),
+					),
+					'data4'=> array(
+							'#type' => 'fieldset',
+							'#title' => t('Data 4'),
+							'data4_value'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Value'),
+									'#default_value' => isset($values['general']['data']['data4']['data4_value']) ? $values['general']['data']['data4']['data4_value'] : '',
+							),
+							'data4_unity'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Unity'),
+									'#default_value' => isset($values['general']['data']['data4']['data4_unity']) ? $values['general']['data']['data4']['data4_unity'] : '',
+							),
+							'data4_text'=> array(
+									'#type' => 'textfield',
+									'#title' => t('Text'),
+									'#default_value' => isset($values['general']['data']['data4']['data4_text']) ? $values['general']['data']['data4']['data4_text'] : '',
+							),
+					),
+			);
+			$form['design']['css_box'] = array(
+					'#type' => 'css_box',
+					'#options' => !empty($values['design']['css_box']) ? $values['design']['css_box'] : array(),
+			);			
+			break;
+			case 'header_block_title':
+				$form['vertical_tabs'] = array(
+				'#type' => 'horizontal_tabs',
+				'#parents' => array('vertical_tabs'),
+					
+				);
+				$form['general'] = array(
+						'#type' => 'details',
+						'#title' => t('General'),
+						'#group' => 'vertical_tabs',
+							
+				);
+				$form['general']['attributes'] = array(
+						'#type' => 'details',
+						'#open' => FALSE,
+						'#title' => t('Attributes settings'),
+				);
+				$form['general']['attributes']['id'] = array(
+						'#type' => 'textfield',
+						'#title' => t('ID'),
+						'#default_value' => isset($values['general']['attributes']['id']) ? $values['general']['attributes']['id'] : '',
+						'#description' => t('Enter html ID for element wrapper.')
+				);
+				$form['general']['attributes']['class'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Extra class name'),
+						'#default_value' => isset($values['general']['attributes']['class']) ? $values['general']['attributes']['class'] : '',
+						'#description' => t('Enter your custom css class name, this will use to your custom css.')
+				);
+					
+				$form['general']['attributes']['data-animation'] = array(
+						'#type' => 'select',
+						'#options' => _builder_animate_options(),
+						'#title' => t('Animation'),
+						'#default_value' => isset($values['general']['attributes']['data-animation']) ? $values['general']['attributes']['data-animation'] : '',
+						'#description' => t('Use animation.')->render()
+				);
+					
+					
+				$form['design'] = array(
+						'#type' => 'details',
+						'#title' => t('Design'),
+						'#group' => 'vertical_tabs',
+						'#tree' => TRUE,
+							
+				);
+				$form['general']['title'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Title'),
+						'#default_value' => isset($values['general']['title']) ? $values['general']['title'] : '',
+						'#description' => t('Enter title block.')
+				);
+				$form['general']['subtitle'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Subtitle'),
+						'#default_value' => isset($values['general']['subtitle']) ? $values['general']['subtitle'] : '',
+						'#description' => t('Enter subtitle block.')
+				);
+				
+				$form['design']['css_box'] = array(
+						'#type' => 'css_box',
+						'#options' => !empty($values['design']['css_box']) ? $values['design']['css_box'] : array(),
+				);
+				break;
+			case 'basic_info':
+				$form['vertical_tabs'] = array(
+				'#type' => 'horizontal_tabs',
+				'#parents' => array('vertical_tabs'),
+					
+				);
+				$form['general'] = array(
+						'#type' => 'details',
+						'#title' => t('General'),
+						'#group' => 'vertical_tabs',
+							
+				);
+				$form['general']['attributes'] = array(
+						'#type' => 'details',
+						'#open' => FALSE,
+						'#title' => t('Attributes settings'),
+				);
+				$form['general']['attributes']['id'] = array(
+						'#type' => 'textfield',
+						'#title' => t('ID'),
+						'#default_value' => isset($values['general']['attributes']['id']) ? $values['general']['attributes']['id'] : '',
+						'#description' => t('Enter html ID for element wrapper.')
+				);
+				$form['general']['attributes']['class'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Extra class name'),
+						'#default_value' => isset($values['general']['attributes']['class']) ? $values['general']['attributes']['class'] : '',
+						'#description' => t('Enter your custom css class name, this will use to your custom css.')
+				);
+					
+				$form['general']['attributes']['data-animation'] = array(
+						'#type' => 'select',
+						'#options' => _builder_animate_options(),
+						'#title' => t('Animation'),
+						'#default_value' => isset($values['general']['attributes']['data-animation']) ? $values['general']['attributes']['data-animation'] : '',
+						'#description' => t('Use animation.')->render()
+				);
+					
+					
+				$form['design'] = array(
+						'#type' => 'details',
+						'#title' => t('Design'),
+						'#group' => 'vertical_tabs',
+						'#tree' => TRUE,
+							
+				);
+				$form['general']['title'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Title Section'),
+						'#default_value' => isset($values['general']['title']) ? $values['general']['title'] : '',
+						'#description' => t('Enter section title .')
+				);
+				$form['general']['subtitle'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Subtitle Section'),
+						'#default_value' => isset($values['general']['info']['subtitle']) ? $values['general']['subtitle'] : '',
+						'#description' => t('Enter section subtitle.')
+				);
+				$form['general']['title_info'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Title Info'),
+						'#default_value' => isset($values['general']['title_info']) ? $values['general']['title_info'] : '',
+						'#description' => t('Enter info title.')
+				);
+				$form['general']['content_info'] = array(
+						'#type' => 'text_format',
+						'#title' => t('Content Info'),
+						'#default_value' => isset($values['general']['content_info']['value']) ? $values['general']['content_info']['value'] : '',
+						'#description' => t('Enter info content.')
+				);
+				$form['general']['link']=array(						
+						'#type' => 'fieldset',
+						'#title' => t('Link'),
+						'link_url' => array(
+							'#type' => 'textfield',
+							'#title' => t('Url link'),
+							'#default_value' => isset($values['general']['link']['link_url']) ? $values['general']['link']['link_url'] : '',
+							'#description' => t('Enter url link.'),
+						),
+						'link_text' => array(
+							'#type' => 'textfield',
+							'#title' => t('Text link'),
+							'#default_value' => isset($values['general']['link']['link_text']) ? $values['general']['link']['link_text'] : '',
+							'#description' => t('Enter text link.'),
+						),
+				);
+				
+				$form['design']['css_box'] = array(
+						'#type' => 'css_box',
+						'#options' => !empty($values['design']['css_box']) ? $values['design']['css_box'] : array(),
+				);
+				break;
+	}
+	return $form;
+	
+}
+
+/**
+ * Implements of hook__builder_element_view($type, $element)
+ */
+
+function mt_component_builder_builder_element_view($delta, $element){
+	$type = $element['#type'];
+	$values = isset($element['#settings']) ? $element['#settings'] : array();
+	
+	
+	switch ($type) {
+		case 'image_gallery':
+			$image_content = '';
+			if (!empty($values['general']['image_gallery'])) {
+				$fid = $values['general']['image_gallery'];
+				$file = File::load($fid[0]);
+					
+				if (!empty($file)) {
+					$image = \Drupal::service('image.factory')->get($file->getFileUri());
+						
+					if ($image->isValid()) {
+						$width = $image->getWidth();
+						$height = $image->getHeight();
+					}
+					$theme = 'image';
+					if (!empty($values['general']['image_gallery_style'])) {
+						$theme = 'image_style';
+					}
+					$image_content = array(
+							'#theme' => $theme,
+							'#uri' => $file->getFileUri(),
+							'#style_name' => isset($values['general']['image_gallery_style']) ? $values['general']['image_gallery_style'] : NULL,
+							'#title' => isset($values['general']['title']) ? $values['general']['title'] : '',
+							'#alt' => isset($values['general']['image_gallery_alt']) ? $values['general']['image_gallery_alt'] : '',
+							'#width' => isset($width) ? $width : NULL,
+							'#height' => isset($height) ? $height : NULL,
+					);
+						
+				}
+			}
+				
+			if (!empty($values['general']['image_gallery_link'])) {
+				$image_url = '#';
+				$path = $values['general']['image_gallery_link'];
+				if ($path !== '#') {
+					$image_url = builder_url($path);
+				}
+				$content = render($image_content);
+				$image_content = array(
+						'#markup' => '<a class="use-ajax" data-dialog-type="modal" href="'.$image_url.'">'.$content.'</a>'
+				);
+			}else {
+				$path = file_create_url($image_content['#uri']);
+				$content = render($image_content);
+				$image_content = array(
+						'#markup' => "<a href=\"$path\" data-lightbox=\"$path\">$content</a>"
+				);
+			}
+			$element['#children'] = $image_content;
+				
+			break;
+		case 'image_slider':
+			$image_content = '';
+			if (!empty($values['general']['image_slider'])) {
+				$fid = $values['general']['image_slider'];
+				$file = File::load($fid[0]);
+			
+				if (!empty($file)) {
+					$image = \Drupal::service('image.factory')->get($file->getFileUri());
+			
+					if ($image->isValid()) {
+						$width = $image->getWidth();
+						$height = $image->getHeight();
+					}
+					$theme = 'image';
+					if (!empty($values['general']['image_slider_style'])) {
+						$theme = 'image_style';
+					}
+					$image_content = array(
+							'#theme' => $theme,
+							'#uri' => $file->getFileUri(),
+							'#style_name' => isset($values['general']['image_slider_style']) ? $values['general']['image_slider_style'] : NULL,
+							'#title' => isset($values['general']['title']) ? $values['general']['title'] : '',
+							'#alt' => isset($values['general']['image_slider_alt']) ? $values['general']['image_slider_alt'] : '',
+							'#width' => isset($width) ? $width : NULL,
+							'#height' => isset($height) ? $height : NULL,
+					);
+			
+				}
+			}
+			
+			if (!empty($values['general']['image_slider_link'])) {
+				$image_url = '#';
+				$path = $values['general']['image_slider_link'];
+				if ($path !== '#') {
+					$image_url = builder_url($path);
+				}
+				$content = render($image_content);
+				$image_content = array(
+						'#markup' => "<a href=\"$image_url\">$content</a>"
+				);
+			}
+			$element['#children'] = $image_content;
+			
+			break;
+		case 'video_slider':
+				$video_content = '';
+				if (!empty($values['general']['video_slider'])) {
+					$fid_video = $values['general']['video_slider'];
+					
+					
+					$fid_thumb = $values['general']['video_thumbnail_image_slider'];
+					$file_thumb = File::load($fid_thumb[0]);
+						
+					if (!empty($file_thumb)) {
+						$thumb = \Drupal::service('image.factory')->get($file_thumb->getFileUri());
+							
+						if ($thumb->isValid()) {
+							$width = $thumb->getWidth();
+							$height = $thumb->getHeight();
+						}
+						$theme = 'image';						
+						$image_content = array(
+								'#theme' => $theme,
+								'#uri' => $file_thumb->getFileUri(),
+								'#style_name' => NULL,
+								'#title' => isset($values['general']['title']) ? $values['general']['title'] : '',								
+								'#width' => isset($width) ? $width : NULL,
+								'#height' => isset($height) ? $height : NULL,
+						);
+							
+					}
+				}
+				
+				
+				$video_play= array(
+						'#type' => 'html_tag',
+						'#tag' => 'div',
+						'#attributes' => [
+								'class' => ['video-play'],								
+						],						
+				);
+				$build = array(
+						'#markup'=>render($image_content).render($video_play),
+				);
+				$url = Url::fromUserInput('/modal/video/'.$fid_video[0],['attributes'=>['class'=>'use-ajax','data-accepts'=>'application/vnd.drupal-modal','data-dialog-type' => 'modal']]);
+				$link = Link::fromTextAndUrl(render($build), $url);
+				
+				
+				$element['#children'] = $link;
+					
+				break;
+		case 'block_title':	
+			$title= isset($values['general']['title']) ? $values['general']['title'] : '';
+			$subtitle= isset($values['general']['subtitle']) ? $values['general']['subtitle'] : '';
+			$items = array();
+			foreach ($values['general']['data'] as $key=>$value){				
+				$items[$key]['value'] = isset($value[$key.'_value']) ? $value[$key.'_value'] : '';
+				$items[$key]['unity'] = isset($value[$key.'_unity']) ? $value[$key.'_unity'] : '';
+				$items[$key]['text'] = isset($value[$key.'_text']) ? $value[$key.'_text'] : '';
+				if (!strlen($items[$key]['text'].$items[$key]['unity'].$items[$key]['value'])){
+					unset($items[$key]);
+				}
+								
+			}
+			$build = array(
+					'#theme' => 'builder_block_title',
+					'#title' => $title,
+					'#subtitle' => $subtitle,
+					'#items' => $items,
+			);
+			$content = render($build);
+			
+			$element['#children']=array('#markup' => $content);		
+			break;
+		case 'header_block_title':
+			$title= isset($values['general']['title']) ? $values['general']['title'] : '';
+			$subtitle= isset($values['general']['subtitle']) ? $values['general']['subtitle'] : '';			
+			$build = array(
+					'#theme' => 'builder_header_block_title',
+					'#title' => $title,
+					'#subtitle' => $subtitle,					
+			);
+			$content = render($build);
+					
+			$element['#children']=array('#markup' => $content);
+			break;
+			
+		case 'basic_info':
+			$title= isset($values['general']['title']) ? $values['general']['title'] : '';
+			$subtitle= isset($values['general']['subtitle']) ? $values['general']['subtitle'] : '';
+			$title_info = isset($values['general']['title_info']) ? $values['general']['title_info'] : '';
+			$content_info = isset($values['general']['content_info']['value']) ? $values['general']['content_info']['value'] : '';
+			
+			
+			$field_link =array(
+					'url' => isset($values['general']['link']['link_url']) ? $values['general']['link']['link_url'] : '',					
+					'text' => isset($values['general']['link']['link_text']) ? $values['general']['link']['link_text'] : '',					
+			); 		
+			$opt_link = array(					
+					'attributes' => array(							
+							'class' => array('btn','btn-default'),
+							'role' => 'button',
+					),
+			);
+			if (UrlHelper::isValid($field_link['url'])){
+				$url = Url::fromUserInput($field_link['url'],$opt_link);
+				$link = Link::fromTextAndUrl($field_link['text'], $url);
+			}else{
+				$link="";
+			}
+			
+			
+			
+			$build = array(
+					'#theme' => 'builder_basic_info',
+					'#title' => $title,
+					'#subtitle' => $subtitle,
+					'#title_info' => $title_info,
+					'#content_info' => array('#markup'=>$content_info),
+					'#link' => $link,
+			);
+			$content = render($build);
+					
+			$element['#children']=array('#markup' => $content);
+			break;
+	}	
+
+	return $element;
+}
+
+/**
+ * run this when builder save and all elements saved to database.
+ *
+ * HOOK_builder_element_save($bid, $delta, $element)
+ */
+
+function mt_component_builder_builder_element_save($bid, $delta, $element){
+	$settings = isset($element['#settings']) ? $element['#settings'] : array();
+	switch ($element['#type']) {
+		
+		case 'image_gallery':
+			if (!empty($settings['general']['image_gallery'])) {
+				$fids = $settings['general']['image_gallery'];
+				foreach ($fids as $fid) {
+					$file = file_load($fid);
+					if ($file) {
+						$file->status = FILE_STATUS_PERMANENT;
+						$file->save();
+						$file_usage = \Drupal::service('file.usage');
+						$file_usage->add($file, 'builder', 'builder', $bid);
+					}
+		
+				}
+			}
+			break;
+		case 'image_slider':
+			if (!empty($settings['general']['image_slider'])) {
+				$fids = $settings['general']['image_slider'];
+				foreach ($fids as $fid) {
+					$file = file_load($fid);
+					if ($file) {
+						$file->status = FILE_STATUS_PERMANENT;
+						$file->save();
+						$file_usage = \Drupal::service('file.usage');
+						$file_usage->add($file, 'builder', 'builder', $bid);
+					}
+	
+				}
+			}
+			break;
+		case 'video_slider':
+			if (!empty($settings['general']['video_slider'])) {
+				$fids = $settings['general']['video_slider'];
+				foreach ($fids as $fid) {
+					$file = file_load($fid);
+					if ($file) {
+						$file->status = FILE_STATUS_PERMANENT;
+						$file->save();
+						$file_usage = \Drupal::service('file.usage');
+						$file_usage->add($file, 'builder', 'builder', $bid);
+					}
+			
+				}
+			}
+			if (!empty($settings['general']['video_thumbnail_image_slider'])) {
+				$fids = $settings['general']['video_thumbnail_image_slider'];
+				foreach ($fids as $fid) {
+					$file = file_load($fid);
+					if ($file) {
+						$file->status = FILE_STATUS_PERMANENT;
+						$file->save();
+						$file_usage = \Drupal::service('file.usage');
+						$file_usage->add($file, 'builder', 'builder', $bid);
+					}
+						
+				}
+			}
+			break;
+	}		
+
+}
+
+/**
+ * Implements of hook_builder_element_action_links($type, $element)
+ */
+
+function mt_component_builder_builder_element_action_links($delta, $element) {
+	$type = $element['#type'];
+	$bid = $element['#bid'];
+	$links = array();
+	$modal = !empty($element['#modal']) ? $element['#modal'] : 'modal';
+	if ($type == 'text') {
+		$modal = 'dialog';
+	}
+	if ($modal !== 'dialog' && $modal !== 'modal') {
+		$modal = 'modal';
+	}
+	$action_links = array(
+			'add' => array(
+					'#type' => 'link',
+					'#title' => '',
+					'#url' => Url::fromRoute('builder.element_controller_index', array(
+							'bid' => $bid,
+							'parent' => $element['#id']
+					)),
+					'#attributes' => array(
+							'class' => array('use-ajax', 'icon-plus'),
+							'data-dialog-type' => $modal,
+							'data-dialog-options' => BuilderBase::modalDialogOptions(),
+							'title' => t('Add element to @title', array('@title' => $element['#delta']))->render(),
+					),
+			),
+			'edit' => array(
+					'#type' => 'link',
+					'#title' => '',
+					'#url' => Url::fromRoute('builder.element_controller_edit', array(
+							'bid' => $bid,
+							'id' => $element['#id']
+					)),
+					'#attributes' => array(
+							'class' => array('use-ajax', 'icon-edit'),
+							'data-dialog-type' => $modal,
+							'data-dialog-options' => BuilderBase::modalDialogOptions(),
+							'title' => t('Edit @title', array('@title' => $element['#delta']))->render(),
+					),
+			),
+			'delete' => array(
+					'#type' => 'link',
+					'#title' => '',
+					'#url' => Url::fromRoute('builder.element_controller_delete', array(
+							'bid' => $bid,
+							'id' => $element['#id']
+					)),
+					'#attributes' => array(
+							'class' => array('use-ajax', 'icon-trash'),
+							'title' => t('Delete @title', array('@title' => $element['#delta']))->render(),
+					),
+			),
+			'duplicate' => array(
+					'#type' => 'link',
+					'#title' => '',
+					'#url' => Url::fromRoute('builder.element_controller_duplicate', array(
+							'bid' => $bid,
+							'id' => $element['#id']
+					)),
+					'#attributes' => array(
+							'class' => array('use-ajax', 'icon-docs'),
+							'title' => t('Clone @title', array('@title' => $element['#delta']))->render(),
+							// 'data-dialog-type' => 'modal', // dialog
+							//'data-dialog-options' => BuilderBase::modalDialogOptions(),
+					),
+			),
+	);
+	switch ($type) {
+	
+		case 'row':
+	
+			$links = array('duplicate', 'delete', 'edit', 'add');
+	
+			break;
+	
+		case 'column':
+	
+			$links = array('duplicate', 'delete', 'edit', 'add');
+	
+			break;
+	
+		case 'text':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+	
+		case 'image':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'node':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'block':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'youtube':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'vimeo':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+	
+		case 'contact_form':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'google_map':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'image_gallery':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'slider_multimedia':		
+			$links = array('duplicate', 'delete', 'edit', 'add');			
+			break;
+		case 'image_slider':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'video_slider':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'block_title':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'header_block_title':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'basic_info':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+		case 'embed_views':
+			$links = array('duplicate', 'delete', 'edit');
+			break;
+	
+	}
+	
+	$links_allows = array();
+	
+	if (!empty($links)) {
+		foreach ($links as $link) {
+			if (isset($action_links[$link])) {
+				$links_allows[$link] = $action_links[$link];
+			}
+		}
+	}
+	$build = array(
+			'#theme' => 'item_list',
+			'#attributes' => array('class' => array('builder-element-action-links')),
+			'#items' => $links_allows,
+			'#title' => NULL,
+			'#list_type' => 'ul',
+	);
+	
+	$output = render($build);
+	return $output;
+	
+}
+
+/**
+ * Hook_builder_element_export_alter(&$zip , &$element)
+ */
+function mt_component_builder_builder_element_export_alter(&$zip, &$element) {
+	
+	$files = array();
+	$j = 1;
+	if ($element['#module'] == 'builder' && $element['#delta'] == 'image_gallery' && $element['#type'] == 'image_gallery') {
+		$settings = isset($element['#settings']) ? $element['#settings'] : NULL;
+		if (!empty($settings['general']['image_gallery'])) {
+			foreach ($settings['general']['image_gallery'] as $k => $fid) {
+				for ($i = 0; $i < $zip->numFiles; $i++) {
+					if ($name = $zip->getNameIndex($i)) {
+						$files[] = $name;
+					}
+				}
+				if ($file = File::load($fid)) {
+					$filename = $file->getFilename();
+					if (!empty($files) && in_array($filename, $files)) {
+						$unique = uniqid();
+						$filename = $j . '_' . $unique . '_' . $filename;
+						$j++;
+						$files[] = $filename;
+					}
+					$zip->addFile(drupal_realpath($file->getFileUri()), $filename);
+					$element['#settings']['general']['image_gallery'][$k] = $filename; // add file name location callback for settings data in settings.txt (zip file).
+				}
+			}
+	
+		}
+	}
+	$files = array();
+	$j = 1;
+	if ($element['#module'] == 'builder' && $element['#delta'] == 'image_slider' && $element['#type'] == 'image_slider') {
+		$settings = isset($element['#settings']) ? $element['#settings'] : NULL;
+		if (!empty($settings['general']['image_slider'])) {
+			foreach ($settings['general']['image_slider'] as $k => $fid) {
+				for ($i = 0; $i < $zip->numFiles; $i++) {
+					if ($name = $zip->getNameIndex($i)) {
+						$files[] = $name;
+					}
+				}
+				if ($file = File::load($fid)) {
+					$filename = $file->getFilename();
+					if (!empty($files) && in_array($filename, $files)) {
+						$unique = uniqid();
+						$filename = $j . '_' . $unique . '_' . $filename;
+						$j++;
+						$files[] = $filename;
+					}
+					$zip->addFile(drupal_realpath($file->getFileUri()), $filename);
+					$element['#settings']['general']['image_slider'][$k] = $filename; // add file name location callback for settings data in settings.txt (zip file).
+				}
+			}
+
+		}
+	}
+	$files = array();
+	$j = 1;
+	if ($element['#module'] == 'builder' && $element['#delta'] == 'video_slider' && $element['#type'] == 'video_slider') {
+		$settings = isset($element['#settings']) ? $element['#settings'] : NULL;
+		if (!empty($settings['general']['video_slider'])) {
+			foreach ($settings['general']['video_slider'] as $k => $fid) {
+				for ($i = 0; $i < $zip->numFiles; $i++) {
+					if ($name = $zip->getNameIndex($i)) {
+						$files[] = $name;
+					}
+				}
+				if ($file = File::load($fid)) {
+					$filename = $file->getFilename();
+					if (!empty($files) && in_array($filename, $files)) {
+						$unique = uniqid();
+						$filename = $j . '_' . $unique . '_' . $filename;
+						$j++;
+						$files[] = $filename;
+					}
+					$zip->addFile(drupal_realpath($file->getFileUri()), $filename);
+					$element['#settings']['general']['video_slider'][$k] = $filename; // add file name location callback for settings data in settings.txt (zip file).
+				}
+			}
+	
+		}
+		if (!empty($settings['general']['video_thumbnail_image_slider'])) {
+			foreach ($settings['general']['video_thumbnail_image_slider'] as $k => $fid) {
+				for ($i = 0; $i < $zip->numFiles; $i++) {
+					if ($name = $zip->getNameIndex($i)) {
+						$files[] = $name;
+					}
+				}
+				if ($file = File::load($fid)) {
+					$filename = $file->getFilename();
+					if (!empty($files) && in_array($filename, $files)) {
+						$unique = uniqid();
+						$filename = $j . '_' . $unique . '_' . $filename;
+						$j++;
+						$files[] = $filename;
+					}
+					$zip->addFile(drupal_realpath($file->getFileUri()), $filename);
+					$element['#settings']['general']['video_thumbnail_image_slider'][$k] = $filename; // add file name location callback for settings data in settings.txt (zip file).
+				}
+			}
+		
+		}
+	}
+}
+
+/**
+ * Hook_builder_element_import_alter(&$files , &$element)
+ */
+function mt_component_builder_builder_element_import_alter(&$files, &$element) {
+
+	if ($element['#module'] == 'builder' && $element['#delta'] == 'image_gallery' && $element['#type'] == 'image_gallery') {
+		$settings = isset($element['#settings']) ? $element['#settings'] : NULL;
+		if (!empty($settings['general']['image_gallery'])) {
+			foreach ($settings['general']['image_gallery'] as $k => $filename) {
+				if (!empty($filename) && !empty($files[$filename])) {
+					$element['#settings']['general']['image_gallery'][$k] = $files[$filename];
+				}
+	
+			}
+		}
+	}
+	
+	if ($element['#module'] == 'builder' && $element['#delta'] == 'image_slider' && $element['#type'] == 'image_slider') {
+		$settings = isset($element['#settings']) ? $element['#settings'] : NULL;
+		if (!empty($settings['general']['image_slider'])) {
+			foreach ($settings['general']['image_slider'] as $k => $filename) {
+				if (!empty($filename) && !empty($files[$filename])) {
+					$element['#settings']['general']['image_slider'][$k] = $files[$filename];
+				}
+
+			}
+		}
+	}
+	if ($element['#module'] == 'builder' && $element['#delta'] == 'video_slider' && $element['#type'] == 'video_slider') {
+		$settings = isset($element['#settings']) ? $element['#settings'] : NULL;
+		if (!empty($settings['general']['video_slider'])) {
+			foreach ($settings['general']['video_slider'] as $k => $filename) {
+				if (!empty($filename) && !empty($files[$filename])) {
+					$element['#settings']['general']['video_slider'][$k] = $files[$filename];
+				}
+	
+			}
+		}
+		if (!empty($settings['general']['video_thumbnail_image_slider'])) {
+			foreach ($settings['general']['video_thumbnail_image_slider'] as $k => $filename) {
+				if (!empty($filename) && !empty($files[$filename])) {
+					$element['#settings']['general']['video_thumbnail_image_slider'][$k] = $files[$filename];
+				}
+		
+			}
+		}
+	}
+}
+/**
+ * Themeable for builder_element($variables)
+ */
+
+function mt_component_builder_preprocess_builder_element(&$variables) {
+	$element = $variables['element'];	
+	if ($element['#type'] == 'slider_multimedia'){
+		$variables['children_wrapper_class']='owl-carrousel owl-builder-slider-multimedia';
+	}
+}

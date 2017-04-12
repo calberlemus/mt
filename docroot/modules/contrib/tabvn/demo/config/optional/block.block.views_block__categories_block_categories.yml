@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - system
+    - views
+  theme:
+    - aklas
+id: views_block__categories_block_categories
+theme: aklas
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'views_block:categories-block_categories'
+settings:
+  id: 'views_block:categories-block_categories'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*\r\n/tags/*\r\n/category/*\r\n/archive\r\n/archive/*"
+    negate: false
+    context_mapping: {  }
