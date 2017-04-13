@@ -754,11 +754,11 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php') && isset($
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 $databases['default']['default'] = array (
-  'database' => 'db671586781',
-  'username' => 'dbo671586781',
-  'password' => 'Paola2014',
+  'database' => 'mt',
+  'username' => 'root',
+  'password' => 'root',
   'prefix' => '',
-  'host' => 'db671586781.db.1and1.com',
+  'host' => 'localhost',
   'port' => '',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
