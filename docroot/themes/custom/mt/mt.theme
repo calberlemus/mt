@@ -40,9 +40,9 @@ function mt_theme_registry_alter(&$theme_registry) {
 		$layouts = \Drupal\ds\Ds::getLayouts();
 		$layout_theme_hooks = [];
 		foreach ($layouts as $info) {
-		    if ($info['class'] == '\Drupal\ds\Plugin\DsLayout') {
+		    /*if ($info['class'] == '\Drupal\ds\Plugin\DsLayout') {
 				$layout_theme_hooks[] = $info['theme'];
-		    }
+		    }*/
 		}
 		
 		if(!empty($layout_theme_hooks)){
