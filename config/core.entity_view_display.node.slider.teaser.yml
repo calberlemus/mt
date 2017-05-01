@@ -1,0 +1,33 @@
+uuid: 1ff288e6-0578-4ee5-a8bf-a8db04f49f28
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider.body
+    - field.field.node.slider.field_background
+    - node.type.slider
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: AohCs9VL0yV0YkDtP5gNsabwy3FmdoZxRjs-KiMgTiA
+id: node.slider.teaser
+targetEntityType: node
+bundle: slider
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_background: true
+  langcode: true

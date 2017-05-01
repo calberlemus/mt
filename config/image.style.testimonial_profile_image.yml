@@ -1,0 +1,16 @@
+uuid: 4f18842f-b02a-44ae-8fef-757ef9c9e135
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RA2_BR37oowSa6e6_kLur3VPNd8iTveLccloK6kGWTI
+name: testimonial_profile_image
+label: 'Testimonial profile image'
+effects:
+  7690b62e-c479-4906-8d60-965ecf5fd003:
+    uuid: 7690b62e-c479-4906-8d60-965ecf5fd003
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 60

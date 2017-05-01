@@ -1,0 +1,22 @@
+uuid: 92486a5b-2a1b-43b9-86bc-4ce59ab9b260
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aklas
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: aklas_messages
+theme: aklas
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

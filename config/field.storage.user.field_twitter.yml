@@ -1,0 +1,21 @@
+uuid: d7ab8d09-5233-4c2b-af73-c93b8ae70123
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: znffsRRyRNm-XusG-T6O9RvvXm4QIT2cVXDLe2pJ8UQ
+id: user.field_twitter
+field_name: field_twitter
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: b8e1ad63-aafe-4a38-87ce-f4efe5503fb6
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: M0BAgPG87caxnisrE9QyKGeeCtll0NiIb_b33NnByJY
+id: node.field_google_plus
+field_name: field_google_plus
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

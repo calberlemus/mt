@@ -1,0 +1,19 @@
+uuid: 27486943-c2fd-4302-a740-91552ae5fb3f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: 620vXCuQOsomVy1RrTkpeC0IbriIVAKicYIKNhhRMaM
+name: Slider
+type: slider
+description: 'Slider content.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

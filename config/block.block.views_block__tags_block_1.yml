@@ -1,0 +1,32 @@
+uuid: d66b9a21-40ce-4e71-9886-2e9861c768a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tags
+  module:
+    - system
+    - views
+  theme:
+    - aklas
+_core:
+  default_config_hash: dTvOzopLO1TAdQn9HDeiAK3Eaqw9kAqO_odnVdLgTkE
+id: views_block__tags_block_1
+theme: aklas
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:tags-block_1'
+settings:
+  id: 'views_block:tags-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*\r\n/tags/*\r\n/category/*\r\n/archive\r\n/archive/*"
+    negate: false
+    context_mapping: {  }

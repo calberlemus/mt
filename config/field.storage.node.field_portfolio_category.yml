@@ -1,0 +1,22 @@
+uuid: 8b2aa3aa-3037-4351-80ba-cfc7e4850490
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: wV4RsHnvhgZ0Ff9y3uN6liXJBz2RoALY3HMddDrd3Ps
+id: node.field_portfolio_category
+field_name: field_portfolio_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

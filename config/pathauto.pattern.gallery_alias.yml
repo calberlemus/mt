@@ -1,0 +1,22 @@
+uuid: 4f95d20e-e419-4bb5-a54f-ecc46f5b4761
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: gallery_alias
+label: 'Alias de Galerías'
+type: 'canonical_entities:node'
+pattern: 'galeria/[node:title]'
+selection_criteria:
+  0848d5f9-258b-4eb8-8a62-8bd0646ae99f:
+    id: node_type
+    bundles:
+      gallery: gallery
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 0848d5f9-258b-4eb8-8a62-8bd0646ae99f
+selection_logic: and
+weight: -5
+relationships: {  }

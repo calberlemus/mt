@@ -1,0 +1,21 @@
+uuid: 7cc881c9-88aa-448a-971e-2093afeb535d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.team
+_core:
+  default_config_hash: rd21PkiR9FXmRB0OUMOi0JxAKLjMWuknG3GxFWUh1l4
+id: node.team.field_position
+field_name: field_position
+entity_type: node
+bundle: team
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

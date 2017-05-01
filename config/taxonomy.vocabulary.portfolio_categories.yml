@@ -1,0 +1,11 @@
+uuid: c07bfdee-1635-4d35-8505-868a378604e9
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5EsqYQdKJ-2JSsVhyr2q_Acm0vieSD49ts6fIp3Mbog
+name: 'Portfolio categories'
+vid: portfolio_categories
+description: ''
+hierarchy: 0
+weight: 0

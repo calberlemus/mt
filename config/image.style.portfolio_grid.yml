@@ -1,0 +1,16 @@
+uuid: 6b1f5d31-3ae3-4a51-a6d1-c56520323765
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3j1qyQ4LWhea19eQSEycIGm4-UaXMo8ji45hLQkHea4
+name: portfolio_grid
+label: portfolio_grid
+effects:
+  e88b9f97-a129-4d54-b100-e9eb16d2046e:
+    uuid: e88b9f97-a129-4d54-b100-e9eb16d2046e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300

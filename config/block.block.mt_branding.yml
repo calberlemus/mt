@@ -1,0 +1,25 @@
+uuid: 98cf0125-18fe-4cfd-bf9f-d0a0ea64f321
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mt
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: mt_branding
+theme: mt
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

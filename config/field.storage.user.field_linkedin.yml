@@ -1,0 +1,21 @@
+uuid: aa854154-aa59-4308-8b62-f42cec3e4787
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: FcpJgn6JgxnCaK6eTtR63ZvTSTbP113A5SPolxZUUP8
+id: user.field_linkedin
+field_name: field_linkedin
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

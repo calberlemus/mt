@@ -1,0 +1,25 @@
+uuid: ebb44827-c187-483e-a401-ae86c728b8d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.portfolio
+  module:
+    - link
+_core:
+  default_config_hash: 6sWNqt62W3w4vAZCHS_dR5WNyu8f1QQBXudP2plted0
+id: node.portfolio.field_link
+field_name: field_link
+entity_type: node
+bundle: portfolio
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

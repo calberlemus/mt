@@ -1,0 +1,158 @@
+uuid: 600d9bc7-926d-4b2e-986e-28c3d370aa39
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_client
+    - field.field.node.portfolio.field_created_by
+    - field.field.node.portfolio.field_delivered
+    - field.field.node.portfolio.field_image
+    - field.field.node.portfolio.field_link
+    - field.field.node.portfolio.field_portfolio_category
+    - field.field.node.portfolio.field_skills
+    - node.type.portfolio
+  module:
+    - datetime
+    - field_group
+    - link
+    - owl
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_summary:
+      children:
+        - field_created_by
+        - field_delivered
+        - field_skills
+        - field_client
+      parent_name: ''
+      weight: 2
+      label: Summary
+      format_type: html_element
+      format_settings:
+        label: Summary
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: portfolio-right
+    group_project_description:
+      children:
+        - body
+        - field_link
+      parent_name: ''
+      weight: 1
+      label: 'Project description'
+      format_type: html_element
+      format_settings:
+        label: 'Project description'
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: portfolio-left
+_core:
+  default_config_hash: m_7fa7WOWQcd-zuUlqaQv6IVwd_-NrT_UqpjO4uz7-c
+id: node.portfolio.default
+targetEntityType: node
+bundle: portfolio
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_client:
+    weight: 110
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_created_by:
+    weight: 107
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_delivered:
+    weight: 108
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_month
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      items: '1'
+      itemsDesktop: '[1199,4]'
+      itemsDesktopSmall: '[979,3]'
+      itemsTablet: '[768,2]'
+      itemsMobile: '[479,1]'
+      singleItem: '1'
+      slideSpeed: '200'
+      paginationSpeed: '800'
+      rewindSpeed: '1000'
+      prevText: prev
+      nextText: next
+      rewindNav: '1'
+      pagination: '1'
+      responsive: '1'
+      responsiveRefreshRate: '200'
+      mouseDrag: '1'
+      touchDrag: '1'
+      transitionStyle: fade
+      itemsScaleUp: 0
+      autoPlay: 0
+      stopOnHover: 0
+      navigation: 0
+      scrollPerPage: 0
+      paginationNumbers: 0
+      navigationText: '["prev","next"]'
+    third_party_settings: {  }
+    type: owl_field_formatter
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_skills:
+    weight: 109
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_portfolio_category: true
+  langcode: true
+  links: true

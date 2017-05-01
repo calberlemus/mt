@@ -1,0 +1,22 @@
+uuid: ec572fa6-26aa-40dd-b099-21d7b528898f
+langcode: es
+status: true
+dependencies:
+  theme:
+    - mt
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: mt_local_tasks
+theme: mt
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

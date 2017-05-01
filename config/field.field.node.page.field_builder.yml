@@ -1,0 +1,25 @@
+uuid: 19e90a30-22e9-42cd-a074-abb0b16c236c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_builder
+    - node.type.page
+  module:
+    - builder
+_core:
+  default_config_hash: qD5Lj3PCF6Nm0s-FlUYuFZcqvCWLJm81aX8EKDGcdaM
+id: node.page.field_builder
+field_name: field_builder
+entity_type: node
+bundle: page
+label: Builder
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    bid: '8'
+default_value_callback: ''
+settings: {  }
+field_type: builder

@@ -1,0 +1,5476 @@
+'builder:es:17':
+  builder-element-56d7b5942d9a7-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: features
+          class: 'section-services padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: 'overflow: hidden;'
+    '#weight': 0
+    '#id': builder-element-56d7b5942d9a7-007
+  builder-element-56d7b6907472a-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56d7b5942d9a7-007
+    '#weight': 1
+    '#id': builder-element-56d7b6907472a-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: col-sm-4
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56d7b6907e1e7-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56d7b6907472a-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-box
+          data-animation: fadeInLeft
+        text:
+          value: "<p><a class=\"service-icon-box\" href=\"#\"><span class=\"icon icon-Pencil\">#</span></a></p>\r\n\r\n<h3>Designed For You!</h3>\r\n\r\n<h4>clean &amp; modern</h4>\r\n\r\n<p>Reprehenderit in voluptate velit esse cillum dolorg erou fugiat nullam pariatur excepteur sint occaecat cupidatat ipsum dolor sit amet elit.</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 2
+    '#id': builder-element-56d7b6907e1e7-007
+  builder-element-56d7b894136c2-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56d7b5942d9a7-007
+    '#weight': 3
+    '#id': builder-element-56d7b894136c2-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: col-sm-4
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56d7b89417f25-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56d7b894136c2-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-box
+          data-animation: fadeInUp
+        text:
+          value: "<p><a class=\"service-icon-box\" href=\"#\"><span class=\"icon icon-DesktopMonitor\">#</span></a></p>\r\n\r\n<h3>Fit All Screens!</h3>\r\n\r\n<h4>responsive design</h4>\r\n\r\n<p>Reprehenderit in voluptate velit esse cillum dolorg erou fugiat nullam pariatur excepteur sint occaecat cupidatat ipsum dolor sit amet elit.</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 4
+    '#id': builder-element-56d7b89417f25-007
+  builder-element-56d7b894d7853-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56d7b5942d9a7-007
+    '#weight': 5
+    '#id': builder-element-56d7b894d7853-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: col-sm-4
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56d7b894dc907-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56d7b894d7853-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-box
+          data-animation: fadeInRight
+        text:
+          value: "<p><a class=\"service-icon-box\" href=\"#\"><span class=\"icon icon-Tools\">#</span></a></p>\r\n\r\n<h3>Suits Everyone!</h3>\r\n\r\n<h4>multipurpose</h4>\r\n\r\n<p>Reprehenderit in voluptate velit esse cillum dolorg erou fugiat nullam pariatur excepteur sint occaecat cupidatat ipsum dolor sit amet elit.</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 6
+    '#id': builder-element-56d7b894dc907-007
+  builder-element-56d7c1d40df8c-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: welcome
+          class: 'section-welcome padding-bottom'
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: 'overflow: hidden;'
+    '#weight': 7
+    '#id': builder-element-56d7c1d40df8c-007
+  builder-element-56d7c2b651029-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56d7c1d40df8c-007
+    '#weight': 8
+    '#id': builder-element-56d7c2b651029-007
+    '#settings':
+      general:
+        grid: '6'
+        attributes:
+          id: ''
+          class: welcome-left-column
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image:
+                - '41'
+              repeat: repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: 'color: #FFF;'
+  builder-element-56d7c2b65ad41-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56d7c2b651029-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: welcome-text
+          data-animation: ''
+        text:
+          value: "<h4>. we are aklas digital agency .</h4>\r\n\r\n<div class=\"line left\">\r\n<p>Eorem ipsum dolor sit amet consecter adipsicing elit sed usm dui tempa incididunt ute labore et dolore magna aliqua ut enima minim lora beniap quis nostrual exercitationullamco laboris aliqu sed.</p>\r\n\r\n<p>Bcea aliqlorem ipsumdolor sit amet lorem ipsum dolor sit amet ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n\r\n<p><em>“ A creative agency that follows intelligent methodology to deliver solutions.”</em></p>\r\n</div>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 9
+    '#id': builder-element-56d7c2b65ad41-007
+  builder-element-56d7c324534b8-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56d7c1d40df8c-007
+    '#settings':
+      general:
+        grid: '6'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 10
+    '#id': builder-element-56d7c324534b8-007
+  builder-element-56d7c3360265c-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56d7c324534b8-007
+    '#settings':
+      general:
+        image:
+          - '42'
+        title: ''
+        image_alt: ''
+        image_style: ''
+        image_link: ''
+        attributes:
+          id: ''
+          class: welcome-image
+          data-animation: fadeInRight
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 11
+    '#id': builder-element-56d7c3360265c-007
+  builder-element-56d90428786df-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: portfolio
+          class: section-portfolio
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 12
+    '#id': builder-element-56d90428786df-007
+  builder-element-56d99785831f7-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56d90428786df-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 15
+    '#id': builder-element-56d99785831f7-007
+  builder-element-56d997a3e9d1e-007:
+    '#type': embed_views
+    '#info': 'Embed views'
+    '#depend': column
+    '#delta': embed_views
+    '#module': builder
+    '#parent': builder-element-56d99785831f7-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        views: 'portfolio**recent_projects'
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 16
+    '#id': builder-element-56d997a3e9d1e-007
+  builder-element-56d997b089b44-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56d90428786df-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 13
+    '#id': builder-element-56d997b089b44-007
+  builder-element-56d997cfa6fc1-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56d997b089b44-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: 'recent-project-title arrow-down'
+        text:
+          value: "<h3>. recent projects .</h3>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 14
+    '#id': builder-element-56d997cfa6fc1-007
+  builder-element-56da4ad1d30d6-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: section-hire-us
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image:
+                - '43'
+              repeat: repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: 'color: #FFF;'
+    '#weight': 17
+    '#id': builder-element-56da4ad1d30d6-007
+  builder-element-56da4b15a5f22-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da4ad1d30d6-007
+    '#weight': 18
+    '#id': builder-element-56da4b15a5f22-007
+    '#settings':
+      general:
+        grid: '2'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56da4b15b1ad1-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da4b15a5f22-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: site-info
+        text:
+          value: "<h6 class=\"text-white\"><a href=\"#\">.Aklas.</a></h6>\r\n\r\n<p class=\"slogan text-white text-medium\">Creative Agency</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 19
+    '#id': builder-element-56da4b15b1ad1-007
+  builder-element-56da4b7c6a727-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da4ad1d30d6-007
+    '#weight': 20
+    '#id': builder-element-56da4b7c6a727-007
+    '#settings':
+      general:
+        grid: '7'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56da4b7c7aaa8-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da4b7c6a727-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        text:
+          value: "<h4 class=\"text-white\">We are honest &amp; hard working team</h4>\r\n\r\n<p class=\"text-medium\">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt anim</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 21
+    '#id': builder-element-56da4b7c7aaa8-007
+  builder-element-56da4be535134-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da4ad1d30d6-007
+    '#weight': 22
+    '#id': builder-element-56da4be535134-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56da4be53a715-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da4be535134-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        text:
+          value: "<p><a class=\"button white\" href=\"#\">hire us for a project</a></p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 23
+    '#id': builder-element-56da4be53a715-007
+  builder-element-56da5d23b4ac3-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: services
+          class: 'section-service-offer padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 24
+    '#id': builder-element-56da5d23b4ac3-007
+  builder-element-56da5d2a0d182-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da5d23b4ac3-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 25
+    '#id': builder-element-56da5d2a0d182-007
+  builder-element-56da5d3af1e58-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da5d2a0d182-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        text:
+          value: "<h3 class=\"arrow-down\">. services we offer .</h3>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 26
+    '#id': builder-element-56da5d3af1e58-007
+  builder-element-56da5d451b115-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da5d23b4ac3-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 27
+    '#id': builder-element-56da5d451b115-007
+  builder-element-56da5d514b774-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56da5d451b115-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 28
+    '#id': builder-element-56da5d514b774-007
+  builder-element-56da5d6c9a132-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da5d514b774-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: service-offer-column
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 29
+    '#id': builder-element-56da5d6c9a132-007
+  builder-element-56da5e487b30c-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da5d6c9a132-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-offer-icon
+        text:
+          value: "<p><a class=\"icon icon-Notebook\" href=\"#\"><em>Best Service!</em></a></p>\r\n\r\n<h6 class=\"line line-color\">Web develotpment</h6>\r\n\r\n<p>Incididunt ute labore dolore magna aliqua enima beniaps quis nostrual exercitationullamco laboris aliqu sed bcea lorem ipsum dolor</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 30
+    '#id': builder-element-56da5e487b30c-007
+  builder-element-56da5eca1e615-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da5d514b774-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: service-offer-column
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 31
+    '#id': builder-element-56da5eca1e615-007
+  builder-element-56da5eca25b38-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da5eca1e615-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-offer-icon
+        text:
+          value: "<p><a class=\"icon icon-DSLRCamera\" href=\"#\"><em>Featured Offer!</em></a></p>\r\n\r\n<h6 class=\"line line-color\">photography</h6>\r\n\r\n<p>Incididunt ute labore dolore magna aliqua enima beniaps quis nostrual exercitationullamco laboris aliqu sed bcea lorem ipsum dolor</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 32
+    '#id': builder-element-56da5eca25b38-007
+  builder-element-56da5ecb26420-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da5d514b774-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: service-offer-column
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 33
+    '#id': builder-element-56da5ecb26420-007
+  builder-element-56da5ecb2d278-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da5ecb26420-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-offer-icon
+        text:
+          value: "<p><a class=\"icon icon-Share\" href=\"#\"><em>Suits Everyone!</em></a></p>\r\n\r\n<h6 class=\"line line-color\">Social Marketing</h6>\r\n\r\n<p>Incididunt ute labore dolore magna aliqua enima beniaps quis nostrual exercitationullamco laboris aliqu sed bcea lorem ipsum dolor</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 34
+    '#id': builder-element-56da5ecb2d278-007
+  builder-element-56da66364ba60-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56da5d451b115-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 35
+    '#id': builder-element-56da66364ba60-007
+  builder-element-56da66365a4a9-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da66364ba60-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: service-offer-column
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 36
+    '#id': builder-element-56da66365a4a9-007
+  builder-element-56da66365d665-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da66365a4a9-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-offer-icon
+        text:
+          value: "<p><a class=\"icon icon-Mouse\" href=\"#\"><em>High Quality!</em></a></p>\r\n\r\n<h6 class=\"line line-color\">grafix design</h6>\r\n\r\n<p>Incididunt ute labore dolore magna aliqua enima beniaps quis nostrual exercitationullamco laboris aliqu sed bcea lorem ipsum dolor</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 37
+    '#id': builder-element-56da66365d665-007
+  builder-element-56da663665569-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da66364ba60-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: service-offer-column
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 38
+    '#id': builder-element-56da663665569-007
+  builder-element-56da6636680de-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da663665569-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-offer-icon
+        text:
+          value: "<p><a class=\"icon icon-WorldWide\" href=\"#\"><em>Attractive Identity!</em></a></p>\r\n\r\n<h6 class=\"line line-color\">company branding</h6>\r\n\r\n<p>Incididunt ute labore dolore magna aliqua enima beniaps quis nostrual exercitationullamco laboris aliqu sed bcea lorem ipsum dolor</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 39
+    '#id': builder-element-56da6636680de-007
+  builder-element-56da663670bbd-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da66364ba60-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: service-offer-column
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 40
+    '#id': builder-element-56da663670bbd-007
+  builder-element-56da663673be6-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da663670bbd-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: service-offer-icon
+        text:
+          value: "<p><a class=\"icon icon-Video\" href=\"#\"><em>High Resolution!</em></a></p>\r\n\r\n<h6 class=\"line line-color\">video production</h6>\r\n\r\n<p>Incididunt ute labore dolore magna aliqua enima beniaps quis nostrual exercitationullamco laboris aliqu sed bcea lorem ipsum dolor</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 41
+    '#id': builder-element-56da663673be6-007
+  builder-element-56da74a7901b9-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: about
+          class: 'section-special-facts padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 1
+              color: '#3f5c91'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: 'color: #FFF;'
+    '#weight': 42
+    '#id': builder-element-56da74a7901b9-007
+  builder-element-56da7506286fd-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da74a7901b9-007
+    '#weight': 49
+    '#id': builder-element-56da7506286fd-007
+  builder-element-56da75062f08d-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da7506286fd-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: 'special-facts-box right'
+        text:
+          value: "<p><a class=\"no-text icon icon-Users\" href=\"#\">#</a></p>\r\n\r\n<h3>. 940+</h3>\r\n\r\n<p>We Have Satisfied Clients Worldwide</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 50
+    '#id': builder-element-56da75062f08d-007
+  builder-element-56da7515561b8-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da74a7901b9-007
+    '#weight': 43
+    '#id': builder-element-56da7515561b8-007
+  builder-element-56da75155ca3e-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da7515561b8-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: special-facts-box
+        text:
+          value: "<p><a class=\"no-text icon icon-ChartUp\" href=\"#\">#</a></p>\r\n\r\n<h3>. 850+</h3>\r\n\r\n<p>Finished Web Design &amp; Development Projects</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 44
+    '#id': builder-element-56da75155ca3e-007
+  builder-element-56da7df6cf835-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da74a7901b9-007
+    '#weight': 45
+    '#id': builder-element-56da7df6cf835-007
+  builder-element-56da7df6d61e1-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da7df6cf835-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: 'special-facts-box right'
+        text:
+          value: "<p><a class=\"no-text icon icon-TeaMug\" href=\"#\">#</a></p>\r\n\r\n<h3>. 3200+</h3>\r\n\r\n<p>Cups of Green Tea &amp; Coffee Ordered</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 46
+    '#id': builder-element-56da7df6d61e1-007
+  builder-element-56da7df9c3a39-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56da74a7901b9-007
+    '#weight': 47
+    '#id': builder-element-56da7df9c3a39-007
+  builder-element-56da7df9ca72d-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56da7df9c3a39-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: special-facts-box
+        text:
+          value: "<p><a class=\"no-text icon icon-Cup\" href=\"#\">#</a></p>\r\n\r\n<h3>. 135+</h3>\r\n\r\n<p>Awards We Have Won So far</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ff89ff'
+            css: ''
+    '#weight': 48
+    '#id': builder-element-56da7df9ca72d-007
+  builder-element-56dc056050e1d-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: 'section-why-choose-us padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 51
+    '#id': builder-element-56dc056050e1d-007
+  builder-element-56dc05842d448-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dc056050e1d-007
+    '#weight': 52
+    '#id': builder-element-56dc05842d448-007
+    '#settings':
+      general:
+        grid: '5'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dc05843a457-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dc05842d448-007
+    '#settings':
+      general:
+        image:
+          - '44'
+        title: ''
+        image_alt: why-choose-us
+        image_style: ''
+        image_link: ''
+        attributes:
+          id: ''
+          class: why-choose-us-img
+          data-animation: fadeInLeft
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 53
+    '#id': builder-element-56dc05843a457-007
+  builder-element-56dc07687e0f9-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dc056050e1d-007
+    '#weight': 54
+    '#id': builder-element-56dc07687e0f9-007
+    '#settings':
+      general:
+        grid: '7'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dc07688b871-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dc07687e0f9-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: why-choose-us-text
+          data-animation: ''
+        text:
+          value: "<h4>. why choose us .</h4>\r\n\r\n<p class=\"line\">Eorem ipsum dolor sit amet consecter adipsicing elit sed usm dui tempor incididunt ute labore et dolore magna aliqua ut enima minim lora beniaps quis nostrual.</p>\r\n\r\n<ul>\r\n\t<li class=\"line\"><a class=\"icon icon-Plaine no-text\">#</a>\r\n\r\n\t<h6>Powerful solutions</h6>\r\n\r\n\t<p>Reprehenderit in voluptate velit esse cillum dolorg erou fugiat nullam pariatur excepteur sint occaecat cupidatat.</p>\r\n\t</li>\r\n\t<li class=\"line\"><a class=\"icon icon-Picture no-text\">#</a>\r\n\t<h6>Modern &amp; clean design</h6>\r\n\r\n\t<p>Laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam.</p>\r\n\t</li>\r\n\t<li class=\"line\"><a class=\"icon icon-Umbrella no-text\">#</a>\r\n\t<h6>lifetime support</h6>\r\n\r\n\t<p>Quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia.</p>\r\n\t</li>\r\n</ul>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 55
+    '#id': builder-element-56dc07688b871-007
+  builder-element-56dc208b3219c-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: team
+          class: 'section-team padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image:
+                - '45'
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 56
+    '#id': builder-element-56dc208b3219c-007
+  builder-element-56dc20d06144e-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dc208b3219c-007
+    '#weight': 59
+    '#id': builder-element-56dc20d06144e-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dc20d067814-007:
+    '#type': embed_views
+    '#info': 'Embed views'
+    '#depend': column
+    '#delta': embed_views
+    '#module': builder
+    '#parent': builder-element-56dc20d06144e-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        views: 'team_members**block_team_members'
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 60
+    '#id': builder-element-56dc20d067814-007
+  builder-element-56dc21cacb80c-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dc208b3219c-007
+    '#weight': 57
+    '#id': builder-element-56dc21cacb80c-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dc21cad91e6-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dc21cacb80c-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+        text:
+          value: "<h3 class=\"arrow-down\">. Meet our team .</h3>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 58
+    '#id': builder-element-56dc21cad91e6-007
+  builder-element-56dc430cc04fb-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: skills
+          class: 'section-skills padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 61
+    '#id': builder-element-56dc430cc04fb-007
+  builder-element-56dc485b3472e-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dc430cc04fb-007
+    '#weight': 62
+    '#id': builder-element-56dc485b3472e-007
+  builder-element-56dc485b4287a-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dc485b3472e-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        text:
+          value: "<ul class=\"skills\">\r\n\t<li data-percent=\"95%\">\r\n\t<h6>Web design</h6>\r\n\r\n\t<p><span>95%</span></p>\r\n\t</li>\r\n\t<li data-percent=\"70%\">\r\n\t<h6>Programming</h6>\r\n\r\n\t<p><span>95%</span></p>\r\n\t</li>\r\n\t<li data-percent=\"90%\">\r\n\t<h6>app development</h6>\r\n\r\n\t<p><span>90%</span></p>\r\n\t</li>\r\n\t<li data-percent=\"75%\">\r\n\t<h6>Internet marketing</h6>\r\n\r\n\t<p><span>75%</span></p>\r\n\t</li>\r\n</ul>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 63
+    '#id': builder-element-56dc485b4287a-007
+  builder-element-56dc48cec8825-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dc430cc04fb-007
+    '#weight': 64
+    '#id': builder-element-56dc48cec8825-007
+  builder-element-56dc48cedb3e8-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dc48cec8825-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: skills-text-info
+        text:
+          value: "<h6 class=\"line\">. we make things perfect! .<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse.</p><p><img alt=\"pen\" class=\"pen\" data-entity-type=\"file\" data-entity-uuid=\"9c7b91af-2986-46f6-9350-809d758b985e\" src=\"http://muebleseltaller.es/sites/default/files/Pen.png\" data-image-name=\"Pen.png\"> <img alt=\"plant\" class=\"plant\" data-entity-type=\"file\" data-entity-uuid=\"495d8b99-37f0-423b-a509-9ec01ff27099\" src=\"http://muebleseltaller.es/sites/default/files/plant.png\" data-image-name=\"plant.png\"></p></h6>\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 65
+    '#id': builder-element-56dc48cedb3e8-007
+  builder-element-56dd15184a5fc-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: testimonials
+          class: 'section-testimonials padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image:
+                - '48'
+              repeat: repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: "background-size: cover;\r\ncolor: #FFF;"
+    '#weight': 66
+    '#id': builder-element-56dd15184a5fc-007
+  builder-element-56dd153dee9cd-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd15184a5fc-007
+    '#weight': 67
+    '#id': builder-element-56dd153dee9cd-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd153e01fd4-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd153dee9cd-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 68
+    '#id': builder-element-56dd153e01fd4-007
+  builder-element-56dd1557de867-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd153e01fd4-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 69
+    '#id': builder-element-56dd1557de867-007
+  builder-element-56dd1598e81a4-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dd1557de867-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        text:
+          value: "<h4 class=\"text-white\">. What people say .</h4>\r\n\r\n<p class=\"line\">Read what our satisfied clients have to say about our services !</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 70
+    '#id': builder-element-56dd1598e81a4-007
+  builder-element-56dd15bfa0128-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd153dee9cd-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 71
+    '#id': builder-element-56dd15bfa0128-007
+  builder-element-56dd1602c38e1-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd15bfa0128-007
+    '#weight': 72
+    '#id': builder-element-56dd1602c38e1-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd1602c9b72-007:
+    '#type': embed_views
+    '#info': 'Embed views'
+    '#depend': column
+    '#delta': embed_views
+    '#module': builder
+    '#parent': builder-element-56dd1602c38e1-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        views: 'client_testimonials**block_testimonials'
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 73
+    '#id': builder-element-56dd1602c9b72-007
+  builder-element-56dd24e62214c-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: news
+          class: 'section-news padding border-top'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 74
+    '#id': builder-element-56dd24e62214c-007
+  builder-element-56dd24f26224e-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd24e62214c-007
+    '#weight': 75
+    '#id': builder-element-56dd24f26224e-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd24f269fd0-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd24f26224e-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 76
+    '#id': builder-element-56dd24f269fd0-007
+  builder-element-56dd24fe66804-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd24f26224e-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 79
+    '#id': builder-element-56dd24fe66804-007
+  builder-element-56dd252088a13-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd24f269fd0-007
+    '#weight': 77
+    '#id': builder-element-56dd252088a13-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd25208f111-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dd252088a13-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+        text:
+          value: "<h3 class=\"arrow-down\">. Latest news .</h3>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 78
+    '#id': builder-element-56dd25208f111-007
+  builder-element-56dd25462d348-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd24fe66804-007
+    '#weight': 80
+    '#id': builder-element-56dd25462d348-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd254634487-007:
+    '#type': embed_views
+    '#info': 'Embed views'
+    '#depend': column
+    '#delta': embed_views
+    '#module': builder
+    '#parent': builder-element-56dd25462d348-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        views: 'blog**block_latest_news'
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 81
+    '#id': builder-element-56dd254634487-007
+  builder-element-56dd8309a4e5b-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: hiring
+          class: 'section-hiring section-color padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 82
+    '#id': builder-element-56dd8309a4e5b-007
+  builder-element-56dd833c7ebd0-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8309a4e5b-007
+    '#weight': 83
+    '#id': builder-element-56dd833c7ebd0-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd833c887a1-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd833c7ebd0-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 84
+    '#id': builder-element-56dd833c887a1-007
+  builder-element-56dd83505d610-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd833c7ebd0-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 87
+    '#id': builder-element-56dd83505d610-007
+  builder-element-56dd836c3df8c-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd833c887a1-007
+    '#weight': 85
+    '#id': builder-element-56dd836c3df8c-007
+    '#settings':
+      general:
+        grid: '12'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd836c4bb4c-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dd836c3df8c-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+        text:
+          value: "<h3 class=\"text-center text-semibold\">.&nbsp; we are looking for developer!<br />\r\nWANTed TO JOIN OUR TEAM? .</h3>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 86
+    '#id': builder-element-56dd836c4bb4c-007
+  builder-element-56dd83ab6fb5a-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd83505d610-007
+    '#weight': 88
+    '#id': builder-element-56dd83ab6fb5a-007
+    '#settings':
+      general:
+        grid: '9'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd83ab7731e-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dd83ab6fb5a-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+          data-animation: bounceInLeft
+        text:
+          value: "<p class=\"line\">Vorem ipsum dolor sit amet consecter adipsicing elit sed usm dui tempor incididunt ute labore dolore magna aliqua ut enima minim lora beniaps quis nostrual exercitationullamco laboris aliqu sed.</p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 89
+    '#id': builder-element-56dd83ab7731e-007
+  builder-element-56dd83d01867c-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd83505d610-007
+    '#weight': 90
+    '#id': builder-element-56dd83d01867c-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+  builder-element-56dd83d01fb52-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56dd83d01867c-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+          data-animation: bounceInRight
+        text:
+          value: "<p><a class=\"button white\" href=\"#\">send us your Cv</a></p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 91
+    '#id': builder-element-56dd83d01fb52-007
+  builder-element-56dd8755d895a-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: clients
+          class: 'section-clients padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 92
+    '#id': builder-element-56dd8755d895a-007
+  builder-element-56dd897f643eb-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8cef93915-007
+    '#settings':
+      general:
+        image:
+          - '49'
+        title: ''
+        image_alt: logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 109
+    '#id': builder-element-56dd897f643eb-007
+  builder-element-56dd89a9cd7e8-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8cfd36d00-007
+    '#settings':
+      general:
+        image:
+          - '50'
+        title: ''
+        image_alt: logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 113
+    '#id': builder-element-56dd89a9cd7e8-007
+  builder-element-56dd8b24d73df-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8cc03eb72-007
+    '#settings':
+      general:
+        image:
+          - '51'
+        title: ''
+        image_alt: Logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 107
+    '#id': builder-element-56dd8b24d73df-007
+  builder-element-56dd8c454a49e-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8755d895a-007
+    '#settings':
+      general:
+        grid: '10'
+        attributes:
+          id: ''
+          class: col-md-push-1
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 104
+    '#id': builder-element-56dd8c454a49e-007
+  builder-element-56dd8c4e22f0e-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd8c454a49e-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 105
+    '#id': builder-element-56dd8c4e22f0e-007
+  builder-element-56dd8cc03eb72-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8c4e22f0e-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 106
+    '#id': builder-element-56dd8cc03eb72-007
+  builder-element-56dd8cef93915-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8c4e22f0e-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 108
+    '#id': builder-element-56dd8cef93915-007
+  builder-element-56dd8cfd36d00-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8c4e22f0e-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 112
+    '#id': builder-element-56dd8cfd36d00-007
+  builder-element-56dd8d0fb0e3d-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8c4e22f0e-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 110
+    '#id': builder-element-56dd8d0fb0e3d-007
+  builder-element-56dd8d0fbaf88-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8d0fb0e3d-007
+    '#settings':
+      general:
+        image:
+          - '52'
+        title: ''
+        image_alt: logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 111
+    '#id': builder-element-56dd8d0fbaf88-007
+  builder-element-56dd8d26f2c61-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#parent': builder-element-56dd8c454a49e-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: ''
+        inner_class: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 105
+    '#id': builder-element-56dd8d26f2c61-007
+  builder-element-56dd8d270822a-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8d26f2c61-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 106
+    '#id': builder-element-56dd8d270822a-007
+  builder-element-56dd8d270eee0-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8d270822a-007
+    '#settings':
+      general:
+        image:
+          - '53'
+        title: ''
+        image_alt: Logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 107
+    '#id': builder-element-56dd8d270eee0-007
+  builder-element-56dd8d272079d-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8d26f2c61-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 108
+    '#id': builder-element-56dd8d272079d-007
+  builder-element-56dd8d2726608-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8d272079d-007
+    '#settings':
+      general:
+        image:
+          - '54'
+        title: ''
+        image_alt: logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 109
+    '#id': builder-element-56dd8d2726608-007
+  builder-element-56dd8d2737cc8-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8d26f2c61-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 112
+    '#id': builder-element-56dd8d2737cc8-007
+  builder-element-56dd8d273de0c-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8d2737cc8-007
+    '#settings':
+      general:
+        image:
+          - '55'
+        title: ''
+        image_alt: logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 113
+    '#id': builder-element-56dd8d273de0c-007
+  builder-element-56dd8d274f90a-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56dd8d26f2c61-007
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-6
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 110
+    '#id': builder-element-56dd8d274f90a-007
+  builder-element-56dd8d2755dc8-007:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-56dd8d274f90a-007
+    '#settings':
+      general:
+        image:
+          - '56'
+        title: ''
+        image_alt: logo
+        image_style: ''
+        image_link: '#'
+        attributes:
+          id: ''
+          class: client-logo
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 111
+    '#id': builder-element-56dd8d2755dc8-007
+  builder-element-56de4b30a6353-007:
+    '#type': row
+    '#info': Row
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: pricing
+          class: 'section-pricing padding-bottom'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 93
+    '#id': builder-element-56de4b30a6353-007
+  builder-element-56de4b3ae66dc-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56de4b30a6353-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-56de4b3ae66dc-007
+  builder-element-56de4b85b7563-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56de4b3ae66dc-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: pricing
+          data-animation: ''
+        text:
+          value: "<h4>. standard .</h4>\r\n\r\n<p><em>Ideal for New Startups</em></p>\r\n\r\n<p class=\"price\">. 29$<span>/Mo</span></p>\r\n\r\n<ul>\r\n\t<li>50 User accounts</li>\r\n\t<li>200 GB Data Storage</li>\r\n\t<li>20 Email Accounts</li>\r\n\t<li>25 Free Projects</li>\r\n</ul>\r\n\r\n<p><a class=\"button\" href=\"#\">Purchase</a></p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-56de4b85b7563-007
+  builder-element-56de4b8d2e67c-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56de4b30a6353-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-56de4b8d2e67c-007
+  builder-element-56de4b8d37f2a-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56de4b8d2e67c-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: 'pricing active'
+          data-animation: ''
+        text:
+          value: "<h4>. business .</h4>\r\n\r\n<p>Ideal for Small Business</p>\r\n\r\n<p class=\"price\">. 49$<span>/Mo</span></p>\r\n\r\n<ul>\r\n\t<li>100 User accounts</li>\r\n\t<li>1 TB Data Storage</li>\r\n\t<li>60 Email Accounts</li>\r\n\t<li>50 Free Projects</li>\r\n</ul>\r\n\r\n<p><a class=\"button\" href=\"#\">Purchase</a></p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-56de4b8d37f2a-007
+  builder-element-56de4b924a5ae-007:
+    '#type': column
+    '#info': Column
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-56de4b30a6353-007
+    '#settings':
+      general:
+        grid: '4'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-56de4b924a5ae-007
+  builder-element-56de4b9254edf-007:
+    '#type': text
+    '#info': 'Custom Text'
+    '#depend': column
+    '#modal': dialog
+    '#delta': text
+    '#module': builder
+    '#parent': builder-element-56de4b924a5ae-007
+    '#settings':
+      general:
+        attributes:
+          id: ''
+          class: pricing
+          data-animation: ''
+        text:
+          value: "<h4>. premium .</h4>\r\n\r\n<p><em>Ideal for Large Companies</em></p>\r\n\r\n<p class=\"price\">. 79$<span>/Mo</span></p>\r\n\r\n<ul>\r\n\t<li>200 User accounts</li>\r\n\t<li>2 TB Data Storage</li>\r\n\t<li>100 Email Accounts</li>\r\n\t<li>135 Free Projects</li>\r\n</ul>\r\n\r\n<p><a class=\"button\" href=\"#\">Purchase</a></p>\r\n"
+          format: full_html
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-56de4b9254edf-007
+'builder:es:37':
+  builder-element-58e4a25388d9c:
+    '#type': row
+    '#info': Fila
+    '#delta': row
+    '#module': builder
+    '#settings':
+      general:
+        attributes:
+          id: features
+          class: 'section-services padding'
+        inner_class: container
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: 'overflow: hidden;'
+    '#weight': 0
+    '#id': builder-element-58e4a25388d9c
+  builder-element-58e4a2a6a0256:
+    '#type': column
+    '#info': Columna
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-58e4a25388d9c
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-3
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 3
+    '#id': builder-element-58e4a2a6a0256
+  builder-element-58e4a2c6b46a9:
+    '#type': column
+    '#info': Columna
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-58e4a25388d9c
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-3
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 5
+    '#id': builder-element-58e4a2c6b46a9
+  builder-element-58e4a2dd24c18:
+    '#type': column
+    '#info': Columna
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-58e4a25388d9c
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: col-sm-3
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 7
+    '#id': builder-element-58e4a2dd24c18
+  builder-element-58e4a408a4134:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-58e4a2c6b46a9
+    '#settings':
+      general:
+        image:
+          - '72'
+        title: ''
+        image_alt: ''
+        image_style: medium
+        image_link: ''
+        attributes:
+          id: ''
+          class: ''
+          data-animation: bounceInRight
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 6
+    '#id': builder-element-58e4a408a4134
+  builder-element-58e4a42992923:
+    '#type': image
+    '#info': Image
+    '#depend': column
+    '#delta': image
+    '#module': builder
+    '#parent': builder-element-58e4a2dd24c18
+    '#settings':
+      general:
+        image:
+          - '73'
+        title: ''
+        image_alt: ''
+        image_style: medium
+        image_link: ''
+        attributes:
+          id: ''
+          class: ''
+          data-animation: bounceInRight
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 8
+    '#id': builder-element-58e4a42992923
+  builder-element-58e6650c17f1e:
+    '#type': column
+    '#info': Columna
+    '#depend': row
+    '#delta': column
+    '#module': builder
+    '#parent': builder-element-58e4a25388d9c
+    '#settings':
+      general:
+        grid: '3'
+        attributes:
+          id: ''
+          class: ''
+          data-animation: ''
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-58e6650c17f1e
+  builder-element-58e66a5087ccc:
+    '#type': image_gallery
+    '#info': 'Image Gallery'
+    '#depend': column
+    '#delta': image_gallery
+    '#module': mt_component_builder
+    '#parent': builder-element-58e6650c17f1e
+    '#settings':
+      general:
+        image_gallery:
+          - '81'
+        title: ''
+        image_gallery_alt: ''
+        image_gallery_style: max_325x325
+        image_gallery_link: galeria/dormitorios-de-diseno
+        attributes:
+          id: ''
+          class: image-gallery-home
+          data-animation: bounceInLeft
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: 'border-radius: 50%;'
+    '#weight': 1
+    '#id': builder-element-58e66a5087ccc
+  builder-element-58e76ebd163a0:
+    '#type': image_gallery
+    '#info': 'Image Gallery'
+    '#depend': column
+    '#delta': image_gallery
+    '#module': mt_component_builder
+    '#parent': builder-element-58e4a2a6a0256
+    '#settings':
+      general:
+        image_gallery:
+          - '82'
+        title: ''
+        image_gallery_alt: ''
+        image_gallery_style: max_325x325
+        image_gallery_link: ''
+        attributes:
+          id: ''
+          class: image-gallery-home
+          data-animation: bounceInLeft
+      design:
+        css_box:
+          margin:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          border:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          padding:
+            top: ''
+            right: ''
+            bottom: ''
+            left: ''
+          extra:
+            background:
+              color_enabled: 0
+              color: '#ffffff'
+              image: {  }
+              repeat: no-repeat
+            border:
+              style: none
+              color_enabled: 0
+              color: '#ffffff'
+            css: ''
+    '#weight': 1
+    '#id': builder-element-58e76ebd163a0

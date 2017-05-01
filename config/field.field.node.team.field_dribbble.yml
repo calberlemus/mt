@@ -1,0 +1,25 @@
+uuid: 0577cbbc-4aa9-4ff9-b763-f13a6a53073b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dribbble
+    - node.type.team
+  module:
+    - link
+_core:
+  default_config_hash: LBq9krpBDh-jXZuzuL-ZQe1arzrjHmf4r1HntzPdf_s
+id: node.team.field_dribbble
+field_name: field_dribbble
+entity_type: node
+bundle: team
+label: Dribbble
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

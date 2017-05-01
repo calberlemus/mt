@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_behance
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_dribbble
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_youtube
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -24,6 +31,14 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
+    region: content
 hidden:
+  field_behance: true
+  field_bio: true
+  field_dribbble: true
+  field_facebook: true
+  field_linkedin: true
+  field_twitter: true
+  field_youtube: true
   langcode: true
   member_for: true

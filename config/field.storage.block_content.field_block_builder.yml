@@ -1,0 +1,21 @@
+uuid: 93408f0c-6303-49c9-86b3-7cf589f45d43
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - builder
+_core:
+  default_config_hash: L0CDMI_UOD4t8kKcojoOYvdx00zN4Z50qK6C3505150
+id: block_content.field_block_builder
+field_name: field_block_builder
+entity_type: block_content
+type: builder
+settings: {  }
+module: builder
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,45 @@
+uuid: 2c6eeb8a-47b7-45b8-8899-deca01720952
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_client
+    - field.field.node.portfolio.field_created_by
+    - field.field.node.portfolio.field_delivered
+    - field.field.node.portfolio.field_image
+    - field.field.node.portfolio.field_link
+    - field.field.node.portfolio.field_portfolio_category
+    - field.field.node.portfolio.field_skills
+    - node.type.portfolio
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 2FdF8wFg8beoSgalTzCmLEFZBTFXO1A65OqI2NfQxL8
+id: node.portfolio.teaser
+targetEntityType: node
+bundle: portfolio
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_client: true
+  field_created_by: true
+  field_delivered: true
+  field_image: true
+  field_link: true
+  field_portfolio_category: true
+  field_skills: true
+  langcode: true

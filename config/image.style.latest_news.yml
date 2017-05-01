@@ -1,0 +1,16 @@
+uuid: 0a6d6525-7245-4fda-bee6-6e17d3039555
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 80p90YPoOO0fxFBSH1U1hY0c6gOKcOq2MeDIW4CTrAg
+name: latest_news
+label: 'Latest news'
+effects:
+  b55da15c-3cae-4c0a-a500-e0150c371cae:
+    uuid: b55da15c-3cae-4c0a-a500-e0150c371cae
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 460
+      height: 180

@@ -1,0 +1,19 @@
+uuid: b3afa395-212e-48b4-be78-ff76afea1181
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: YbP9GLqlo6fjA8GIfiC8CzCOjkUm0Cf3A0_aRw8vHhE
+name: max_325x325
+label: 'Max 325x325'
+effects:
+  bac3c26e-4109-4645-b76d-860915671fb3:
+    uuid: bac3c26e-4109-4645-b76d-860915671fb3
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 325
+      height: 325

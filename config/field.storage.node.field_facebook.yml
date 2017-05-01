@@ -1,0 +1,21 @@
+uuid: 3076ac1b-6b9f-4577-9a29-b5f29acb99e4
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: UJptWD-qws2aXBqyiPYf4P5TyMGeKYnxbyCz4Yz60uE
+id: node.field_facebook
+field_name: field_facebook
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

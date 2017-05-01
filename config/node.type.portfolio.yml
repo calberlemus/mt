@@ -1,0 +1,19 @@
+uuid: 6ad2966b-501e-4816-af61-3a83c163bbfe
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: i1_R1IBSKiDeFJL9L6dVIMDR_SBYh9iUTNRbKc_tGjg
+name: Portfolio
+type: portfolio
+description: 'Portfolio content.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

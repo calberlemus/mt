@@ -1,0 +1,22 @@
+uuid: 8663370e-085c-47fc-bd3f-0c76b2d18831
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mt
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: mt_powered
+theme: mt
+region: header
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 2ec0f0d1-0be4-48cb-af9b-98e0b7100d01
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mt
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: mt_messages
+theme: mt
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

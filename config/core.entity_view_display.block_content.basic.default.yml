@@ -5,7 +5,9 @@ dependencies:
   config:
     - block_content.type.basic
     - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_block_builder
   module:
+    - builder
     - text
 _core:
   default_config_hash: zCrrHAjrsQgWjBXBsshAZjND21czBy8sH_L5v_xDKSA
@@ -20,5 +22,13 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_block_builder:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: builder_formatter
+    region: content
 hidden:
   langcode: true

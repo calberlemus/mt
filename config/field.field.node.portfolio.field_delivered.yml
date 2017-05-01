@@ -1,0 +1,26 @@
+uuid: e7840e4b-44df-40b8-be88-6c54cbc387a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_delivered
+    - node.type.portfolio
+  module:
+    - datetime
+_core:
+  default_config_hash: Rk8mE1nrfYvRLhopSBCorAkWI9QnI-iP2Z6joMNMoXk
+id: node.portfolio.field_delivered
+field_name: field_delivered
+entity_type: node
+bundle: portfolio
+label: Delivered
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

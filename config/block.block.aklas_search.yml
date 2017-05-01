@@ -1,0 +1,22 @@
+uuid: d0501ba2-5122-4126-99a6-ea76eafc3d6d
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - aklas
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: aklas_search
+theme: aklas
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  provider: search
+  label_display: visible
+visibility: {  }

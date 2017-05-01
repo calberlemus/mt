@@ -1,0 +1,38 @@
+uuid: b575cf8e-2f29-4893-abe9-3c7f7f25261f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slider.body
+    - field.field.node.slider.field_background
+    - node.type.slider
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: jPYxKYV6VhSMeKnk1xI5tJLGSKjmcuS-TZibEoDvxrQ
+id: node.slider.default
+targetEntityType: node
+bundle: slider
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_background:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true
+  links: true

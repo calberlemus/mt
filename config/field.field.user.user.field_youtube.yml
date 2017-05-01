@@ -1,0 +1,30 @@
+uuid: 02d965fc-ac96-413e-8900-08f19d4bcd5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_youtube
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: h-pjlu6ZDLie8hmhktu32P9S0ei64pqVbnI96MgRYgI
+id: user.user.field_youtube
+field_name: field_youtube
+entity_type: user
+bundle: user
+label: Youtube
+description: 'Youtube URL'
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://youtube.com'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

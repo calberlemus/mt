@@ -1,0 +1,22 @@
+uuid: e87138ca-2edd-4512-94d6-8dac352e9099
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - mt
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: mt_search
+theme: mt
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  provider: search
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,16 @@
+uuid: d627a6bd-81dd-44c3-8113-34a0c3b6c1a4
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OWBdxr8dNBll42IzcYmi1J4S798dkdrzicIyf07H46M
+name: team_member
+label: 'Team member'
+effects:
+  61c460c9-2102-4c88-9308-8d7b15d1c1ac:
+    uuid: 61c460c9-2102-4c88-9308-8d7b15d1c1ac
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 280

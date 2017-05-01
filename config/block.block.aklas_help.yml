@@ -1,0 +1,22 @@
+uuid: f850e7b3-1f15-49e2-99d5-22da1ae74540
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - aklas
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: aklas_help
+theme: aklas
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  provider: help
+  label_display: '0'
+visibility: {  }

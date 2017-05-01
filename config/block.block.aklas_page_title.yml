@@ -1,0 +1,27 @@
+uuid: 2fc52705-ca89-4de9-b076-e9744a7ba102
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aklas
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: aklas_page_title
+theme: aklas
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: true
+    context_mapping: {  }

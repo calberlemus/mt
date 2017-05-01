@@ -1,0 +1,21 @@
+uuid: eef89be7-65a6-408b-9ac9-29c74148930f
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: Mci_ELzES9v05N0u0VduSjLqRiENz9XuOGcx5h6bMSc
+id: user.field_behance
+field_name: field_behance
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

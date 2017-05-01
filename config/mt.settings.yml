@@ -1,0 +1,52 @@
+fluid_container: null
+_core:
+  default_config_hash: d61k3lIMw_9vhoZMR0hZP7KzUXlaef3ebKC1hvzzowE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://muebleseltaller.es/themes/custom/mt/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  aklas: 8000
+  mt: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://logotemp.png'
+  url: ''
+  use_default: false
+region_wells:
+  header: ''
+  primary_menu: ''
+  header_icons: ''
+  page_title: ''
+  slider: ''
+  highlighted: ''
+  featured_top: ''
+  breadcrumb: ''
+  content: ''
+  content_bottom: ''
+  footer_left: ''
+  footer_right: ''
+button_colorize: null
+button_iconize: null
+button_size: null
+forms_has_error_value_toggle: null
+forms_required_has_error: null
+forms_smart_descriptions: null
+forms_smart_descriptions_allowed_tags: null
+forms_smart_descriptions_limit: null
+image_responsive: null
+image_shape: null
+table_bordered: null
+table_condensed: null
+table_hover: null
+table_striped: null
+table_responsive: null
+table: ''
+header: default
+langcode: es

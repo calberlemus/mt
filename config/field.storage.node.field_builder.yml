@@ -1,0 +1,21 @@
+uuid: 3fcb28a5-ac93-4a60-949e-bf84def3183f
+langcode: es
+status: true
+dependencies:
+  module:
+    - builder
+    - node
+_core:
+  default_config_hash: oYCYxQSajgLXP2hGJcu9-m-psYqselMeTwJ5mDm3_Ok
+id: node.field_builder
+field_name: field_builder
+entity_type: node
+type: builder
+settings: {  }
+module: builder
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

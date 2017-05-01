@@ -1,0 +1,21 @@
+uuid: 87904f81-ea4b-422f-998c-de31691c8383
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: ppY5JbDz31glN-EgzZw2HNJ-gjaWK1xtg2IyNmSU2DI
+id: node.field_dribbble
+field_name: field_dribbble
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

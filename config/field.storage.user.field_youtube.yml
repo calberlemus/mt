@@ -1,0 +1,21 @@
+uuid: 18a1835e-1d0e-4bca-b5b3-3ba06aea9de8
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: '-udfbuGQ1Tt5bdYQ5QLUwiccFUrX40QfN05iNFtnlmI'
+id: user.field_youtube
+field_name: field_youtube
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

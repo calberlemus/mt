@@ -1,0 +1,35 @@
+uuid: c36c6f40-e9fb-4a46-8df3-cda61a1b15a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - mt
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: mt_page_title
+theme: mt
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: true
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

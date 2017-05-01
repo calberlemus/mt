@@ -1,0 +1,21 @@
+uuid: 6aea048e-82b8-4af5-8a85-dc010a9c4b02
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_created_by
+    - node.type.portfolio
+_core:
+  default_config_hash: 0Br2IHEiFfGq5JlZJJ8SYSCFwcLQD3ZOSSz6MycfyC8
+id: node.portfolio.field_created_by
+field_name: field_created_by
+entity_type: node
+bundle: portfolio
+label: 'Created by'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

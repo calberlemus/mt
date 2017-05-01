@@ -1,0 +1,20 @@
+uuid: b6368dd4-7437-4871-b66d-e5ea9aba76a1
+langcode: es
+status: true
+dependencies:
+  theme:
+    - mt
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: mt_local_actions
+theme: mt
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones primarias de administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

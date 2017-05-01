@@ -1,0 +1,32 @@
+uuid: 14ed0057-e44a-477d-a810-7083392a4713
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - aklas
+_core:
+  default_config_hash: '-SR7j6eXXpfa_RuE2y8HzCMxyI-v3ZGuAht98X9i1XY'
+id: views_block__slider_block_1
+theme: aklas
+region: slider
+weight: -13
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/home\r\n/home/*"
+    negate: false
+    context_mapping: {  }

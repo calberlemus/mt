@@ -1,0 +1,31 @@
+uuid: 70ec4b87-2004-42d6-bd89-a728d29eed69
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - aklas
+_core:
+  default_config_hash: vQwyBSmB0XCBGdNmvg8zpVsIY7OTPbkuOO2nSi2MS6I
+id: exposedformblogblog_page
+theme: aklas
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:blog-blog_page'
+settings:
+  id: 'views_exposed_filter_block:blog-blog_page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Search
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*\r\n/tags\r\n/tags/*\r\n/category/*\r\n/archive\r\n/archive/*"
+    negate: false
+    context_mapping: {  }

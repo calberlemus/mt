@@ -1,0 +1,38 @@
+uuid: 84ba9a5a-3f7e-413b-974c-d26512008b05
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_profile_image
+    - node.type.testimonial
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: GOSFKRX9phlX3a2DoxkOc3RojmIxaucbvZb6sekGmgg
+id: node.testimonial.default
+targetEntityType: node
+bundle: testimonial
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_profile_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true
+  links: true

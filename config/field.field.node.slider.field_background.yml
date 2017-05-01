@@ -1,0 +1,40 @@
+uuid: b73d8ba8-a649-4806-b119-dfeaebc76219
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background
+    - node.type.slider
+  module:
+    - image
+_core:
+  default_config_hash: QXYqI6Om7j4NS4rpwXimISqdVzggJfQo_lGhBkXtufQ
+id: node.slider.field_background
+field_name: field_background
+entity_type: node
+bundle: slider
+label: Fondo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

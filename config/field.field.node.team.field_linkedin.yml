@@ -1,0 +1,25 @@
+uuid: 399f030d-0170-464c-9d5c-8ece8208cf7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkedin
+    - node.type.team
+  module:
+    - link
+_core:
+  default_config_hash: KEeTagTinvIw8uGkDq8_-2UbnpQbvr_eTPLT53tpqyo
+id: node.team.field_linkedin
+field_name: field_linkedin
+entity_type: node
+bundle: team
+label: Linkedin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

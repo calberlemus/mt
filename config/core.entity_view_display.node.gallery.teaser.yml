@@ -1,0 +1,67 @@
+uuid: caa67350-3bd6-455e-bb12-60da0a7acc6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gallery.field_categorie
+    - field.field.node.gallery.field_images_gallery
+    - node.type.gallery
+  module:
+    - ds
+    - owl
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_images_gallery
+id: node.gallery.teaser
+targetEntityType: node
+bundle: gallery
+mode: teaser
+content:
+  field_images_gallery:
+    type: owl_field_formatter
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+      items: 5
+      itemsDesktop: '[1199,4]'
+      itemsDesktopSmall: '[979,3]'
+      itemsTablet: '[768,2]'
+      itemsMobile: '[479,1]'
+      singleItem: false
+      itemsScaleUp: false
+      slideSpeed: 200
+      paginationSpeed: 800
+      rewindSpeed: 1000
+      autoPlay: false
+      stopOnHover: false
+      navigation: false
+      navigationText: '["prev","next"]'
+      prevText: prev
+      nextText: next
+      rewindNav: true
+      scrollPerPage: false
+      pagination: true
+      paginationNumbers: false
+      responsive: true
+      responsiveRefreshRate: 200
+      mouseDrag: true
+      touchDrag: true
+      transitionStyle: fade
+    third_party_settings: {  }
+hidden:
+  field_categorie: true
+  langcode: true
+  links: true

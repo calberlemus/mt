@@ -1,0 +1,25 @@
+uuid: 3813b7aa-428a-46b0-bf88-054e5b1778b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_google_plus
+    - node.type.team
+  module:
+    - link
+_core:
+  default_config_hash: Vq54oEO2Zcuuv_KnR8BPd0fbUohKXz4QDDKY5XXADeo
+id: node.team.field_google_plus
+field_name: field_google_plus
+entity_type: node
+bundle: team
+label: 'Google Plus'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

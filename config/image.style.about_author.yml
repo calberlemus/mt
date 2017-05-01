@@ -1,0 +1,16 @@
+uuid: 8fa93ea3-d537-42f1-af09-ce0aa136e721
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zZGMPnp4ai__ZpRrkosjsz7uFKUc1AmihJiX915YDTc
+name: about_author
+label: about_author
+effects:
+  650fe4e9-665a-4b4d-bc00-c5045b18e163:
+    uuid: 650fe4e9-665a-4b4d-bc00-c5045b18e163
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120

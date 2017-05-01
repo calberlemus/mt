@@ -1,0 +1,19 @@
+uuid: 6b7c86a2-3a04-46e5-bdff-b5b0520a8be9
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: QpFewkXE_9lYo6WGLPbodzOe2ophB_9QVqlRVc7vruU
+name: Team
+type: team
+description: 'Team member.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

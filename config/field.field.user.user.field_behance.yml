@@ -1,0 +1,25 @@
+uuid: 756b49d5-9c3c-488e-976e-cbabf0d1473f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_behance
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: LPmcvUnmaS0akWSJEworDLLkJvIPnQDtp906eIOHru0
+id: user.user.field_behance
+field_name: field_behance
+entity_type: user
+bundle: user
+label: Behance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

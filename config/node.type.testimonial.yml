@@ -1,0 +1,19 @@
+uuid: c8dad501-a3b2-4913-a1e8-fb2249c53412
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: mjCCXWxLJcffG2bOXWPGFfZKZq3isUM8JXcFteAgBjw
+name: Testimonial
+type: testimonial
+description: 'Client testimonial.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
